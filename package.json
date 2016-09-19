@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "stylelint 'css/**/*.pcss' '!css/libs/normalize.pcss'"
+    "test": "stylelint 'css/**/*.pcss' '!css/libs/normalize.pcss'",
+    "__clean__": "del -f dist",
+    "__copy__": "copyfiles -u 1 'dev/css/**/*' dist",
+    "__build__": "postcss -r -c postcss.json",
+    "build": "npm run __clean__ && npm run __copy__ && npm run __build__"
   },
   "repository": {
     "type": "git",
@@ -16,6 +20,14 @@
   },
   "homepage": "https://github.com/LionHL/nfm-ui#readme",
   "dependencies": {
+    "copyfiles": "^1.0.0",
+    "del-cli": "^0.2.0",
+    "postcss": "^5.1.2",
+    "postcss-cli": "^2.6.0",
+    "postcss-cssnext": "^2.7.0",
+    "postcss-each": "^0.9.3",
+    "postcss-short": "^1.4.0",
+    "precss": "^1.4.0",
     "stylelint": "^7.2.0",
     "stylelint-config-standard": "^13.0.0"
   }
