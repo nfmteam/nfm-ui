@@ -1,0 +1,6 @@
+{
+  "name": "nfm-ui",
+  "dependencies": {
+    "semantic": "semantic-ui#^2.2.4"
+  }
+}
