@@ -11,4 +11,4 @@ npm run build
 ```
 
 [travis-image]: https://img.shields.io/travis/LionHL/nfm-ui.svg?style=flat-square
-[travis-url]: https://github.com/LionHL/nfm-ui
+[travis-url]: https://travis-ci.org/LionHL/nfm-ui
