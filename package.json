@@ -1,0 +1,22 @@
+{
+  "name": "nfm-ui",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "stylelint 'css/**/*.pcss' '!css/libs/normalize.pcss'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LionHL/nfm-ui.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LionHL/nfm-ui/issues"
+  },
+  "homepage": "https://github.com/LionHL/nfm-ui#readme",
+  "dependencies": {
+    "stylelint": "^7.2.0",
+    "stylelint-config-standard": "^13.0.0"
+  }
+}
