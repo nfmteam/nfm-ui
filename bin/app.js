@@ -17,10 +17,10 @@ app.use(cssInterceptor(devPath));
 
 // js(webpack)
 app.use(webpackMiddleware(webpack(webpackConfig), {
-    publicPath: '/script/',
-    stats: {
-        colors: true
-    }
+  publicPath: '/script/',
+  stats: {
+    colors: true
+  }
 }));
 
 // static, eg: images, html
