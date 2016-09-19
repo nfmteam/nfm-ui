@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "node bin/app",
-    "test": "stylelint 'css/**/*.pcss' '!css/libs/normalize.pcss'",
+    "test": "stylelint 'dev/css/**/*.pcss'",
     "__clean__": "del -f dist",
     "__copy__": "copyfiles -u 1 'dev/css/**/*' dist",
     "__build__": "postcss -r -c postcss.json",
