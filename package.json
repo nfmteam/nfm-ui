@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "start": "node bin/app",
     "test": "stylelint 'css/**/*.pcss' '!css/libs/normalize.pcss'",
     "__clean__": "del -f dist",
     "__copy__": "copyfiles -u 1 'dev/css/**/*' dist",
@@ -22,6 +23,9 @@
   "dependencies": {
     "copyfiles": "^1.0.0",
     "del-cli": "^0.2.0",
+    "koa": "^1.2.4",
+    "koa-static": "^2.0.0",
+    "koa-webpack-dev-middleware": "^1.2.2",
     "postcss": "^5.1.2",
     "postcss-cli": "^2.6.0",
     "postcss-cssnext": "^2.7.0",
@@ -29,6 +33,7 @@
     "postcss-short": "^1.4.0",
     "precss": "^1.4.0",
     "stylelint": "^7.2.0",
-    "stylelint-config-standard": "^13.0.0"
+    "stylelint-config-standard": "^13.0.0",
+    "webpack": "^1.13.2"
   }
 }
