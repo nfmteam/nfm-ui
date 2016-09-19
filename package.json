@@ -6,7 +6,7 @@
     "start": "node bin/app",
     "test": "stylelint 'dev/css/**/*.pcss'",
     "__clean__": "del -f dist",
-    "__copy__": "copyfiles -u 1 'dev/css/**/*' dist",
+    "__copy__": "copyfiles -u 1 'dev/css/nfm.pcss' 'dev/css/libs/semantic/dist/semantic.css' 'dev/css/libs/semantic/dist/themes/**' dist",
     "__build__": "postcss -r -c postcss.json",
     "build": "npm run __clean__ && npm run __copy__ && npm run __build__"
   },
