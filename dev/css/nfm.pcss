@@ -21,16 +21,38 @@ body {
 
 .nfm.sidebar {
     position: absolute 0 * * 0;
-    padding-top: 48px;
+    padding: 60px 0 10px;
     width: 250px;
     height: 100%;
     border-right: 5px solid rgba(34, 36, 38, .15);
+    overflow: hidden;
     z-index: 2;
+}
+
+.nfm .main-sidebar {
+    height: 100%;
+    overflow: scroll;
+    ul {
+        padding-left: 15px;
+        margin: 0;
+        list-style: none;
+        li {
+            list-style: none;
+            a {
+                font-size: 14px;
+                color: #333;
+                i:first-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
 }
 
 .nfm.content {
     position: absolute 48px 0 * 0;
     margin-left: 250px;
+    padding: 10px;
     height: 100%;
     z-index: 2;
 }
