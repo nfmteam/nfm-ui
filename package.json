@@ -4,7 +4,9 @@
   "description": "",
   "scripts": {
     "start": "node bin/app",
-    "test": "stylelint 'dev/css/**/*.pcss'",
+    "test": "npm run test:stylelint && npm run test:eslint",
+    "test:stylelint": "stylelint 'dev/css/**/*.pcss'",
+    "test:eslint": "eslint 'dev/js/**/*.js'",
     "__clean__": "del -f dist",
     "__copy__": "copyfiles -u 1 'dev/css/nfm.pcss' 'dev/css/libs/semantic/dist/semantic.css' 'dev/css/libs/semantic/dist/themes/**' dist",
     "__build__": "postcss -r -c postcss.json",
@@ -23,6 +25,7 @@
   "dependencies": {
     "copyfiles": "^1.0.0",
     "del-cli": "^0.2.0",
+    "eslint": "^3.5.0",
     "koa": "^1.2.4",
     "koa-static": "^2.0.0",
     "koa-webpack-dev-middleware": "^1.2.2",
