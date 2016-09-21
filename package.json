@@ -14,7 +14,8 @@
     "css:clean": "del -f dist/css/**/_*.pcss",
     "css:rename": "renamer --find 'pcss' --replace 'css' dist/css/**/*.pcss",
     "css:process": "node build/css-process",
-    "__build__": "npm run clean && npm run copy && npm run css",
+    "header": "node build/header",
+    "__build__": "npm run clean && npm run copy && npm run css && npm run header",
     "build": "npm run test && npm run __build__"
   },
   "repository": {
@@ -28,6 +29,8 @@
   },
   "homepage": "https://github.com/LionHL/nfm-ui#readme",
   "dependencies": {
+    "async": "^2.0.1",
+    "buffer-concat": "^1.0.0",
     "clean-css": "^3.4.19",
     "copyfiles": "^1.0.0",
     "del-cli": "^0.2.0",
