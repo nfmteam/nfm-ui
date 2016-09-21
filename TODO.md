@@ -10,4 +10,4 @@
 - [ ] 左侧菜单sidebar
 - [ ] 表格table
 - [ ] 提示tip
-- [ ] 交互效果
+- [ ] 交互效果，参考 [animate.css](https://github.com/daneden/animate.css) 和 [Hover](https://github.com/IanLunn/Hover)
