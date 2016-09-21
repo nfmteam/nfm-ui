@@ -7,11 +7,13 @@
     "test": "npm run test:stylelint && npm run test:eslint",
     "test:stylelint": "stylelint 'dev/css/**/*.pcss'",
     "test:eslint": "eslint 'dev/js/**/*.js'",
-    "clean:dist": "del -f dist",
-    "clean:postcss": "del -f dist/css/**/_*.pcss",
+    "clean": "del -f dist",
     "copy": "copyfiles -u 1 'dev/css/**/*.pcss' 'dev/css/libs/semantic/dist/semantic.css' 'dev/css/libs/semantic/dist/themes/**' dist",
-    "postcss": "postcss -r -c postcss.json",
-    "__build__": "npm run clean:dist && npm run copy && npm run postcss && npm run clean:postcss",
+    "css": "npm run css:build && npm run css:clean && npm run css:rename",
+    "css:build": "postcss -r -c postcss.json",
+    "css:clean": "del -f dist/css/**/_*.pcss",
+    "css:rename": "renamer --find 'pcss' --replace 'css' dist/css/**/*.pcss",
+    "__build__": "npm run clean && npm run copy && npm run css",
     "build": "npm run test && npm run __build__"
   },
   "repository": {
@@ -37,6 +39,7 @@
     "postcss-each": "^0.9.3",
     "postcss-short": "^1.4.0",
     "precss": "^1.4.0",
+    "renamer": "^0.5.7",
     "stylelint": "^7.2.0",
     "stylelint-config-standard": "^13.0.0",
     "webpack": "^1.13.2"
