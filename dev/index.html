@@ -15,10 +15,9 @@
             <a class="item">link</a>
             <div class="right menu">
                 <div class="item">
-                    <div class="ui action left icon input">
+                    <div class="ui left icon input">
                         <i class="search icon"></i>
-                        <input type="text" placeholder="Search">
-                        <button class="ui button">Submit</button>
+                        <input class="prompt" type="text" placeholder="Search">
                     </div>
                 </div>
             </div>
@@ -37,7 +36,7 @@
                         <ul>
                             <li>
                                 <a href="javascript:;">
-                                    <i class="mini plus square outline icon"></i>
+                                    <i class="mini minus square outline icon"></i>
                                     <i class="teal folder icon"></i>
                                     index
                                 </a>
@@ -129,7 +128,7 @@
                     </li>
                     <li>
                         <a href="javascript:;">
-                            <i class="mini plus square outline icon"></i>
+                            <i class="mini minus square outline icon"></i>
                             <i class="teal folder icon"></i>
                             js
                         </a>
@@ -169,6 +168,47 @@
         </div>
         <!--sidebar end-->
         <div class="nfm content">
+            <div class="nfm-table">
+                <table class="ui  table">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="example" tabindex="0" class="hidden">
+                                    <label></label>
+                                </div>
+                            </th>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Title</th>
+                            <th>Type</th>
+                            <th>Size</th>
+                            <th>Date last modified</th>
+                            <th>Date released</th>
+                            <th>Date expired</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="ui checkbox">
+                                    <!--.ui.checkbox input:checked ~ .box:after-->
+                                    <input type="checkbox" checked="checked" name="example" tabindex="0" class="hidden">
+                                    <label></label>
+                                </div>
+                            </td>
+                            <td><i class="folder icon"></i></td>
+                            <td>fmall</td>
+                            <td>PC金融旗舰店</td>
+                            <td>folder</td>
+                            <td></td>
+                            <td>9/21/16 11:45AM</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="/script/index.js"></script>
