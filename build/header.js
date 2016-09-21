@@ -9,27 +9,27 @@ const glob = require('glob');
 glob('dist/**/*.css', {
   ignore: 'dist/css/libs/**/*'
 }, function (error, files) {
-    if (error) {
+  if (error) {
+    throw error;
+  }
+
+  var headerBuf = new Buffer(`/*! \n Build on: ${new Date().toLocaleString()} \n Build by: ${os.userInfo().username} \n*/\n`);
+
+  async.map(files, (file, done) => {
+    fs.readFile(file, (error, data) => {
+      if (error) {
         throw error;
-    }
+      }
 
-    var headerBuf = new Buffer(`/*! \n Build on: ${new Date().toLocaleString()} \n Build by: ${os.userInfo().username} \n*/\n`);
+      var fileBuf = bufferConcat([headerBuf, data]);
 
-    async.map(files, (file, done) => {
-        fs.readFile(file, (error, data) => {
-            if (error) {
-                throw error;
-            }
+      fs.writeFile(file, fileBuf, error => {
+        if (error) {
+          throw error;
+        }
 
-            var fileBuf = bufferConcat([headerBuf, data]);
-
-            fs.writeFile(file, fileBuf, error => {
-                if (error) {
-                    throw error;
-                }
-
-                done();
-            });
-        });
+        done();
+      });
     });
+  });
 });
