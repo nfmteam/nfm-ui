@@ -11,7 +11,7 @@
     "copy": "copyfiles -u 1 'dev/css/**/*.pcss' 'dev/css/libs/semantic/dist/semantic.css' 'dev/css/libs/semantic/dist/themes/**' dist",
     "css": "npm run css:build && npm run css:clean && npm run css:rename && npm run css:process",
     "css:build": "postcss -r -c postcss.json",
-    "css:clean": "del -f dist/css/**/_*.pcss",
+    "css:clean": "del -f 'dist/css/**/_*.pcss' 'dist/css/mixins'",
     "css:rename": "renamer --find 'pcss' --replace 'css' dist/css/**/*.pcss",
     "css:process": "node build/css-process",
     "header": "node build/header",
