@@ -7,10 +7,11 @@
     "test": "npm run test:stylelint && npm run test:eslint",
     "test:stylelint": "stylelint 'dev/css/**/*.pcss'",
     "test:eslint": "eslint 'dev/js/**/*.js'",
-    "__clean__": "del -f dist",
-    "__copy__": "copyfiles -u 1 'dev/css/nfm.pcss' 'dev/css/libs/semantic/dist/semantic.css' 'dev/css/libs/semantic/dist/themes/**' dist",
-    "__build__": "postcss -r -c postcss.json",
-    "build": "npm run __clean__ && npm run __copy__ && npm run __build__"
+    "clean": "del -f dist",
+    "copy": "copyfiles -u 1 'dev/css/**/*.pcss' 'dev/css/libs/semantic/dist/semantic.css' 'dev/css/libs/semantic/dist/themes/**' dist",
+    "postcss": "postcss -r -c postcss.json",
+    "__build__": "npm run clean && npm run copy && npm run postcss",
+    "build": "npm run test && npm run __build__"
   },
   "repository": {
     "type": "git",
