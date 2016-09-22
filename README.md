@@ -7,10 +7,16 @@ nfm theme.
 ## Usage
 
 ```shell
+# install
+npm install
+bower install
+
 # run
 npm start
+
 # test
 npm test
+
 # build
 npm run build
 ```
