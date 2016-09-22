@@ -2,7 +2,17 @@
 .nfm.operate {
     margin-bottom: 10px;
     @mixin clearfix;
-    .buttons {
+    .nfm.buttons {
         @mixin nfm-float right;
     }
+}
+
+.nfm.basic.buttons .button:hover, 
+.nfm.basic.buttons .button:focus {
+    color: #000 !important;
+}
+
+.nfm.basic.buttons .button:active {
+    background: #60b044 !important;
+    color: #fff !important;
 }
