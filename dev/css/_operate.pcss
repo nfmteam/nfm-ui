@@ -1,11 +1,4 @@
 /* 操作块operate样式 */
-.nfm.operate {
-    margin-bottom: 10px;
-    @mixin clearfix;
-    .nfm.buttons {
-        @mixin nfm-float right;
-    }
-}
 
 .nfm.basic.buttons .button:hover,
 .nfm.basic.buttons .button:focus {
@@ -15,4 +8,17 @@
 .nfm.basic.buttons .button:active {
     background: #60b044 !important;
     color: #fff !important;
+}
+
+.nfm.operate {
+    margin-bottom: 10px;
+    @mixin clearfix;
+    .nfm.buttons {
+        @mixin nfm-float right;
+    }
+    .detele.button:hover,
+    .detele.button:active {
+        color: #fff !important;
+        background: #DB2828 !important;
+    }
 }
