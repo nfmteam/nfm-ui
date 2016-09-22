@@ -1,5 +1,21 @@
 /* 自定义table样式 */
+.table-wrap {
+    position: absolute 68px 0 20px 0;
+    padding: 0 10px;
+}
+
+.nfm-table {
+    height: 100%;
+    border: 1px solid rgba(34, 36, 38, .15);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 2;
+    @mixin positions relative;
+}
+
 .nfm.table {
+    margin: 0;
+    border: none;
     .ui.checkbox label {
         padding-left: 0;
     }
@@ -11,4 +27,10 @@
             font-size: 13px;
         }
     }
+}
+
+/* table scroll */
+.scroll-table {
+    position: absolute 48px 0 0 0;
+    overflow: scroll;
 }
