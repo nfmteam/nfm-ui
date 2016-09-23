@@ -6,11 +6,14 @@
 
 .nfm-table {
   height: 100%;
-  border: 1px solid rgba(34, 36, 38, .15);
   border-radius: 5px;
   overflow: hidden;
   z-index: 2;
   @mixin positions relative;
+  &> .nfm.table:first-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 
 .nfm.table {
@@ -32,6 +35,10 @@
 
 /* table scroll */
 .scroll-table {
-  position: absolute 48px 0 0 0;
+  position: absolute 46px 0 0 0;
   overflow: scroll;
+  &> .nfm.table:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 }

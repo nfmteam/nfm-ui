@@ -3,9 +3,8 @@
 .nfm.header {
   @mixin positions relative;
   padding: 4px 10px;
-  background: #f5f5f5;
-  border-bottom: 1px solid rgba(34, 36, 38, .15);
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, .15);
+  background: #191919;
+  border-bottom: 2px solid #444;
   z-index: 9;
 }
 
@@ -13,4 +12,13 @@
   margin: 0;
   border: 0;
   border-radius: 0;
+  .item {
+    color: rgb(126, 127, 128);
+  }
+  &> .item:first-child {
+    color: #fff;
+  }
+  a.item:hover {
+    color: #fff !important;
+  }
 }
