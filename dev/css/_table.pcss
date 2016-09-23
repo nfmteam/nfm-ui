@@ -25,9 +25,6 @@
   .ui.checkbox label {
     padding-left: 0;
   }
-  tbody tr:nth-child(even) {
-    background-color: rgba(0, 0, 50, .02);
-  }
   td {
     font-size: 13px;
   }
@@ -40,5 +37,11 @@
   &> .nfm.table:first-child {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+  }
+  .nfm.table tr:nth-child(even) {
+    background-color: rgba(0, 0, 50, .02);
+  }
+  .nfm.table tr:hover {
+    background-color: rgba(0, 0, 0, .2) !important;
   }
 }
