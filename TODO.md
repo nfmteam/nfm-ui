@@ -10,5 +10,8 @@
 - [ ] 左侧菜单sidebar（loading效果，横向&纵向滚动条）
 - [ ] 表格table（右键菜单，标题可编辑）
 - [ ] 按钮的交互效果（hover效果，active效果，loading效果，提示tips）
+- [ ] 弹窗（右下角的成功&失败弹窗）
+- [ ] 自定义滚动条？
+- [ ] 集成编辑器 monaco-editor
 - [ ] 其他交互效果，参考 [animate.css](https://github.com/daneden/animate.css)、[Hover](https://github.com/IanLunn/Hover)、[Effeckt.css](https://github.com/h5bp/Effeckt.css)
 - [ ] 程序入场动画，参考 [spinkit](http://tobiasahlin.com/spinkit)
