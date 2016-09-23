@@ -2,7 +2,7 @@
 
 .nfm.header {
   @mixin positions relative;
-  padding: 4px 10px;
+  padding: 9px 10px;
   background: #191919;
   border-bottom: 2px solid #444;
   z-index: 9;
@@ -12,7 +12,10 @@
   margin: 0;
   border: 0;
   border-radius: 0;
+  min-height: auto;
   .item {
+    padding: 0 10px !important;
+    line-height: 30px;
     color: rgba(255, 255, 255, .7);
   }
   .nfm.logo {
@@ -22,5 +25,8 @@
   }
   a.item:hover {
     color: rgba(255, 255, 255, .9) !important;
+  }
+  .item i.icon {
+    height: 30px;
   }
 }
