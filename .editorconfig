@@ -1,5 +1,5 @@
 root = true
 
-[*.{js,jsx}]
+[*.{js,pcss}]
 indent_style = space
 indent_size = 2

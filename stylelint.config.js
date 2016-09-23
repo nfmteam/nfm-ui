@@ -21,7 +21,7 @@ const customRules = {
     'declaration-block-semicolon-newline-after': 'always',
     'declaration-colon-space-after': 'always',
     'declaration-empty-line-before': 'never',
-    'indentation': 4,
+    'indentation': 2,
     'rule-nested-empty-line-before': 'never-multi-line',
     'rule-non-nested-empty-line-before': ['always', {
       except: ['after-single-line-comment'],
