@@ -14,6 +14,9 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
+  &> .nfm.table:first-child th {
+    color: rgba(255, 255, 255, .75);
+  }
 }
 
 .nfm.table {
@@ -24,9 +27,6 @@
   }
   .ui.checkbox label {
     padding-left: 0;
-  }
-  td {
-    font-size: 13px;
   }
 }
 
@@ -43,5 +43,18 @@
   }
   .nfm.table tr:hover {
     background-color: rgba(0, 0, 0, .2) !important;
+    td {
+      color: rgba(255, 255, 255, .9);
+    }
+  }
+  .nfm.table tr:active {
+    background-color: rgba(0, 0, 0, .4) !important;
+    td {
+      color: rgba(255, 255, 255, .9);
+    }
+  }
+  .nfm.table td {
+    font-size: 13px;
+    color: rgba(255, 255, 255, .75);
   }
 }
