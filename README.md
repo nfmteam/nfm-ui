@@ -21,5 +21,5 @@ npm test
 npm run build
 ```
 
-[travis-image]: https://img.shields.io/travis/LionHL/nfm-ui.svg?style=flat-square
-[travis-url]: https://travis-ci.org/LionHL/nfm-ui
+[travis-image]: https://img.shields.io/travis/nfmteam/nfm-ui.svg?style=flat-square
+[travis-url]: https://travis-ci.org/nfmteam/nfm-ui
