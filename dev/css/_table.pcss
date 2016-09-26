@@ -9,37 +9,22 @@
 
 .nfm.table {
   margin: 0;
-  border: none;
-  th {
-    color: rgba(255, 255, 255, .75);
-  }
   tbody tr:nth-child(even) {
     background-color: rgba(0, 0, 50, .02);
   }
-  tbody tr:hover {
-    background-color: rgba(0, 0, 0, .2) !important;
+  tbody tr:hover, tbody tr:active {
+    background-color: #fffaf3 !important;
     td {
-      color: rgba(255, 255, 255, .9);
-    }
-  }
-  tbody tr:active {
-    background-color: rgba(0, 0, 0, .4) !important;
-    td {
-      color: rgba(255, 255, 255, .9);
+      color: #573a08;
     }
   }
   td {
     font-size: 13px;
-    color: rgba(255, 255, 255, .75);
   }
   .ui.checkbox {
     vertical-align: text-top;
   }
   .ui.checkbox label {
     padding-left: 0;
-    
-  }
-  .ui.checkbox label:before {
-    border: none;
   }
 }
