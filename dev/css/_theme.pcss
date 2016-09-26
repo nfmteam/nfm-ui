@@ -66,6 +66,20 @@
   }
 }
 
+/* table */
+.nfm.table {
+  tbody tr:nth-child(even) {
+    @mixin nfm-bgColor rgba(0, 0, 50, .02);
+  }
+  tbody tr:hover, tbody tr:active {
+    box-shadow: 0 0 0 #C9BA9B inset;
+    @mixin nfm-bgColor #fffaf3;
+    td {
+      color: #573a08;
+    }
+  }
+}
+
 /* 自定义icon颜色 */
 i.i-color.icon {
   @mixin nfm-color rgba(61, 163, 239, .95);
