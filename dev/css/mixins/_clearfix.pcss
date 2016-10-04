@@ -1,10 +1,12 @@
-/* 清除浮动 */
+/* 
+  清除浮动
+  参考bootstrap
+  http://stackoverflow.com/questions/14973317/understanding-bootstraps-clearfix-class
+*/
 @define-mixin clearfix {
-  *zoom: 1;
   &:after {
-    content: '\20';
-    display: block;
-    height: 0;
+    content: "";
+    display: table;
     clear: both;
   }
 }
