@@ -2,8 +2,6 @@
 .idea/
 .vscode/
 node_modules/
-dev/css/libs/
+dev/libs/
 dist/
-*.tgz
-**/*.log
 **/*.swp  
