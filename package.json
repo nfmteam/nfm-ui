@@ -9,7 +9,7 @@
     "test:eslint": "eslint 'dev/js/**/*.js'",
     "clean": "del -f dist",
     "copy": "npm run copy:postcss && npm run copy:public",
-    "copy:postcss": "copyfiles -u 1 'dev/css/**/*.pcss' 'dev/css/libs/semantic/dist/semantic.css' 'dev/css/libs/semantic/dist/themes/**' dist",
+    "copy:postcss": "copyfiles -u 1 'dev/css/**/*.pcss' 'dev/libs/semantic/dist/semantic.css' 'dev/libs/semantic/dist/themes/**' dist",
     "copy:public": "copyfiles 'public/**/*' dist",
     "css": "npm run css:build && npm run css:clean && npm run css:rename && npm run css:process",
     "css:build": "postcss -r -c postcss.json",
