@@ -11,9 +11,8 @@ const customRules = {
   'rules': {
     'at-rule-empty-line-before': ['always', {
       except: [
-        'all-nested',
         'blockless-after-same-name-blockless',
-        'first-nested',
+        'first-nested'
       ],
       ignore: ['after-comment'],
     }],
@@ -22,7 +21,9 @@ const customRules = {
     'declaration-colon-space-after': 'always',
     'declaration-empty-line-before': 'never',
     'indentation': 2,
-    'rule-nested-empty-line-before': 'never-multi-line',
+    'rule-nested-empty-line-before': ['always-multi-line', {
+      except: ['first-nested']
+    }],
     'rule-non-nested-empty-line-before': ['always', {
       except: ['after-single-line-comment'],
       ignore: ['after-comment'],
