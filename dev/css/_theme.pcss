@@ -4,7 +4,7 @@
 
 /* loadingbar */
 .loadingbar {
-  @mixin nfm-bgColor #ffa500;
+  background-color: #ffa500;
   dt, dd {
     box-shadow: #000 1px 0 6px 1px;
   }
@@ -12,74 +12,74 @@
 
 /*  header */
 .nfm.header {
-  @mixin nfm-bgColor #191919;
+  background-color: #191919;
   border-bottom: 2px solid #444;
 }
 
 .nfm.header .nfm.menu {
   .item {
-    @mixin nfm-color rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, .7);
   }
   .nfm.logo {
-    @mixin nfm-color rgba(255, 255, 255, .9);
+    color: rgba(255, 255, 255, .9);
   }
   a.item:hover {
-    @mixin nfm-color rgba(255, 255, 255, .9);
+    color: rgba(255, 255, 255, .9);
   }
 }
 
 /* sidebar */
 .nfm.sidebar {
-  @mixin nfm-bgColor rgba(25, 25, 25, .95);
+  background-color: rgba(25, 25, 25, .95);
   border-right: 1px solid rgba(34, 36, 38, .15);
 }
 
 .nfm .main-sidebar li > a {
-  @mixin nfm-color rgba(255, 255, 255, .6);
+  color: rgba(255, 255, 255, .6);
   &:hover {
-    @mixin nfm-color rgba(255, 255, 255, .9);
+    color: rgba(255, 255, 255, .9);
   }
 }
 
 /* content */
 .nfm.content {
-  @mixin nfm-bgColor rgba(255, 255, 255, .7);
+  background-color: rgba(255, 255, 255, .7);
   border-left: 5px solid #444;
 }
 
 /* operate */
 .nfm.operate {
   .nfm.buttons .button:hover {
-    @mixin nfm-color #000;
-    @mixin nfm-bgColor rgba(255, 255, 255, .9);
+    color: #000;
+    background-color: rgba(255, 255, 255, .9);
   }
   .nfm.buttons .button:active,
   .nfm.buttons .button:focus {
-    @mixin nfm-color rgba(255, 255, 255, .9);
-    @mixin nfm-bgColor #0B8BF1;
+    color: rgba(255, 255, 255, .9);
+    background-color: #0B8BF1;
   }
   .nfm.buttons .detele.button:hover,
   .nfm.buttons .detele.button:focus,
   .nfm.buttons .detele.button:active {
-    @mixin nfm-color rgba(255, 255, 255, .9);
-    @mixin nfm-bgColor #DB2828;
+    color: rgba(255, 255, 255, .9);
+    background-color: #DB2828;
   }
 }
 
 /* table */
 .nfm.table {
   tbody tr:nth-child(even) {
-    @mixin nfm-bgColor rgba(0, 0, 50, .02);
+    background-color: rgba(0, 0, 50, .02);
   }
   tbody tr:hover, tbody tr:active {
     box-shadow: 0 0 0 #C9BA9B inset;
-    @mixin nfm-bgColor #fffaf3;
+    background-color: #fffaf3;
     td {
       color: #573a08;
     }
   }
   a {
-    @mixin nfm-color rgba(0, 0, 0, .87);
+    color: rgba(0, 0, 0, .87);
   }
   .ui.input input:focus {
     border-color: rgba(0, 0, 0, .3);
@@ -88,5 +88,5 @@
 
 /* 自定义icon颜色 */
 i.i-color.icon {
-  @mixin nfm-color rgba(61, 163, 239, .95);
+  color: rgba(61, 163, 239, .95);
 }
