@@ -1,346 +1,331 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>nfm-ui</title>
-    <link rel="stylesheet" type="text/css" href="/libs/semantic/dist/semantic.css">
-    <link rel="stylesheet" type="text/css" href="/css/nfm.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>nfm-ui</title>
+  <link rel="stylesheet" href="/libs/semantic/dist/semantic.css">
+  <link rel="stylesheet" href="/css/nfm.css">
 </head>
+
 <body>
-    <div class="nfm wrap">
-        <!-- loadingbar start-->
-        <div class="loadingbar waiting">
-            <dt></dt>
-            <dd></dd>
+  <div class="nfm wrap">
+    <!-- loadingbar start-->
+    <div class="loadingbar waiting">
+      <dt></dt>
+      <dd></dd>
+    </div>
+    <!-- loadingbar end-->
+    <!-- header start -->
+    <div class="nfm header">
+      <div class="nfm ui secondary menu">
+        <div class="nfm logo item">NFM</div>
+        <div class="right menu">
+          <a class="item" href="javascript:;">LionHL</a>
+          <a class="item" href="javascript:;"><i class="sign out icon"></i>Sign out</a>
         </div>
-        <!-- loadingbar end-->
-        <!-- header start -->
-        <div class="nfm header">
-            <div class="nfm ui secondary menu">
-                <div class="nfm logo item">NFM</div>
-                <div class="right menu">
-                    <a class="item" href="javascript:;">LionHL</a>
-                    <a class="item" href="javascript:;"><i class="sign out icon"></i>Sign out</a>
-                </div>
-            </div>
-        </div>
-        <!-- header end -->
-        <!-- sidebar start -->
-        <div class="nfm sidebar">
-            <div class="main-sidebar">
+      </div>
+    </div>
+    <!-- header end -->
+    <!-- sidebar start -->
+    <div class="nfm sidebar">
+      <div class="main-sidebar">
+        <ul>
+          <li>
+            <a href="javascript:;">
+              <i class="mini caret down icon"></i>
+              <i class="i-color folder open icon"></i>
+              <i class="spinner loading icon"></i> css
+            </a>
+            <ul>
+              <li>
+                <a href="javascript:;">
+                  <i class="mini caret down icon"></i>
+                  <i class="i-color folder open icon"></i>
+                  <i class="spinner loading icon"></i> index
+                </a>
                 <ul>
-                    <li>
-                        <a href="javascript:;">
-                            <i class="mini caret down icon"></i>
-                            <i class="i-color folder open icon"></i>
-                            <i class="spinner loading icon"></i>
-                            css
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="javascript:;">
-                                    <i class="mini caret down icon"></i>
-                                    <i class="i-color folder open icon"></i>
-                                    <i class="spinner loading icon"></i>
-                                    index
-                                </a>
-                                <ul>
-                                    <li>
-                                        <a href="javascript:;">
-                                            <i class="mini icon"></i>
-                                            <i class="nfm-icon i-css icon"></i>
-                                            index.css
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:;">
-                                            <i class="mini icon"></i>
-                                            <i class="nfm-icon i-postcss icon"></i>
-                                            modules.pcss
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <i class="mini caret down icon"></i>
-                                    <i class="i-color folder open icon"></i>
-                                    <i class="spinner loading icon"></i>
-                                    layout
-                                </a>
-                                <ul>
-                                    <li>
-                                        <a href="javascript:;">
-                                            <i class="mini icon"></i>
-                                            <i class="nfm-icon i-css icon"></i>
-                                            layout.css
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <i class="mini caret down icon"></i>
-                            <i class="i-color folder open icon"></i>
-                            <i class="spinner loading icon"></i>
-                            images
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="javascript:;">
-                                    <i class="mini icon"></i>
-                                    <i class="nfm-icon i-image icon"></i>
-                                    banner_01.jpg
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <i class="mini icon"></i>
-                                    <i class="nfm-icon i-image icon"></i>
-                                    banner_02.jpg
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <i class="mini icon"></i>
-                                    <i class="nfm-icon i-image icon"></i>
-                                    banner_03.jpg
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <i class="mini icon"></i>
-                                    <i class="nfm-icon i-image icon"></i>
-                                    banner_04.jpg
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <i class="mini icon"></i>
-                                    <i class="nfm-icon i-image icon"></i>
-                                    banner_05.jpg
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <i class="mini icon"></i>
-                                    <i class="nfm-icon i-image icon"></i>
-                                    sprites.png
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <i class="mini caret down icon"></i>
-                            <i class="i-color folder open icon"></i>
-                            <i class="spinner loading icon"></i>
-                            js
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="javascript:;">
-                                    <i class="mini icon"></i>
-                                    <i class="nfm-icon i-js icon"></i>
-                                    index.js
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <i class="mini icon"></i>
-                                    <i class="nfm-icon i-js icon"></i>
-                                    detail.js
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:;">
-                                    <i class="mini icon"></i>
-                                    <i class="nfm-icon i-js icon"></i>
-                                    layout.js
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:;">
-                            <i class="mini caret right icon"></i>
-                            <i class="i-color folder icon"></i>
-                            <i class="spinner loading icon"></i>
-                            Node4
-                        </a>
-                    </li>
+                  <li>
+                    <a href="javascript:;">
+                      <i class="mini icon"></i>
+                      <i class="nfm-icon i-css icon"></i> index.css
+                    </a>
+                  </li>
+                  <li>
+                    <a href="javascript:;">
+                      <i class="mini icon"></i>
+                      <i class="nfm-icon i-postcss icon"></i> modules.pcss
+                    </a>
+                  </li>
                 </ul>
-            </div>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i class="mini caret down icon"></i>
+                  <i class="i-color folder open icon"></i>
+                  <i class="spinner loading icon"></i> layout
+                </a>
+                <ul>
+                  <li>
+                    <a href="javascript:;">
+                      <i class="mini icon"></i>
+                      <i class="nfm-icon i-css icon"></i> layout.css
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <i class="mini caret down icon"></i>
+              <i class="i-color folder open icon"></i>
+              <i class="spinner loading icon"></i> images
+            </a>
+            <ul>
+              <li>
+                <a href="javascript:;">
+                  <i class="mini icon"></i>
+                  <i class="nfm-icon i-image icon"></i> banner_01.jpg
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i class="mini icon"></i>
+                  <i class="nfm-icon i-image icon"></i> banner_02.jpg
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i class="mini icon"></i>
+                  <i class="nfm-icon i-image icon"></i> banner_03.jpg
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i class="mini icon"></i>
+                  <i class="nfm-icon i-image icon"></i> banner_04.jpg
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i class="mini icon"></i>
+                  <i class="nfm-icon i-image icon"></i> banner_05.jpg
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i class="mini icon"></i>
+                  <i class="nfm-icon i-image icon"></i> sprites.png
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <i class="mini caret down icon"></i>
+              <i class="i-color folder open icon"></i>
+              <i class="spinner loading icon"></i> js
+            </a>
+            <ul>
+              <li>
+                <a href="javascript:;">
+                  <i class="mini icon"></i>
+                  <i class="nfm-icon i-js icon"></i> index.js
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i class="mini icon"></i>
+                  <i class="nfm-icon i-js icon"></i> detail.js
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i class="mini icon"></i>
+                  <i class="nfm-icon i-js icon"></i> layout.js
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <i class="mini caret right icon"></i>
+              <i class="i-color folder icon"></i>
+              <i class="spinner loading icon"></i> Node4
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- sidebar end -->
+    <div class="nfm content">
+      <!-- operate start-->
+      <div class="nfm operate">
+        <!-- search start -->
+        <!-- 备注：搜索时loading状态  添加.loading -->
+        <div class="ui icon input">
+          <input type="text" placeholder="Search...">
+          <i class="search icon"></i>
         </div>
-        <!-- sidebar end -->
-        <div class="nfm content">
-            <!-- operate start-->
-            <div class="nfm operate">
-                <!-- search start -->
-                <!-- 备注：搜索时loading状态  添加.loading -->
-                <div class="ui icon input">
-                    <input type="text" placeholder="Search...">
-                    <i class="search icon"></i>
-                </div>
-                <!-- search end -->
-                <div class="nfm ui basic buttons">
-                    <button class="ui button">
+        <!-- search end -->
+        <div class="nfm ui basic buttons">
+          <button class="ui button">
                         <i class="wizard icon"></i>
                         New
                     </button>
-                    <button class="ui button">
+          <button class="ui button">
                         <i class="upload icon"></i>
                         Upload
                     </button>
-                    <button class="ui button">
+          <button class="ui button">
                         <i class="download icon"></i>
                         Download
                     </button>
-                    <button class="ui button">
+          <button class="ui button">
                         <!-- 备注：发布时i添加.loading -->
                         <i class="refresh icon"></i>
                         Publish
                     </button>
-                    <button class="ui button detele">
+          <button class="ui button detele">
                         <i class="trash outline icon"></i>
                         Delete
                     </button>
-                </div>
-            </div>
-            <!-- operate end-->
-            <!-- nfm table start-->
-            <div class="nfm-table">
-                <table class="nfm ui fixed table">
-                    <thead>
-                        <tr>
-                            <th style="width:40px;">
-                                <div class="ui checkbox">
-                                    <input type="checkbox" name="example" tabindex="0" class="hidden">
-                                    <label></label>
-                                </div>
-                            </th>
-                            <th style="width:40px;"></th>
-                            <th style="width:300px;">Name</th>
-                            <th style="width:150px;">Title</th>
-                            <th style="width:100px;">Size</th>
-                            <th style="width:100px;">Author</th>
-                            <th>Date last modified</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td style="width:40px;">
-                                <div class="ui checkbox">
-                                    <!-- 备注：.ui.checkbox input:checked ~ .box:after -->
-                                    <input type="checkbox" checked="checked" name="example" tabindex="0" class="hidden">
-                                    <label></label>
-                                </div>
-                            </td>
-                            <td style="width:40px;"><i class="i-color folder icon"></i></td>
-                            <td style="width:300px;">
-                                <div class="ui input">
-                                    <input type="text" value="fmall">
-                                </div>
-                            </td>
-                            <td style="width:150px;">旗舰店</td>
-                            <td style="width:100px;"></td>
-                            <td style="width:100px;">LionHL</td>
-                            <td>9/21/16 11:45AM</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="ui checkbox">
-                                    <input type="checkbox" checked="checked" name="example" tabindex="0" class="hidden">
-                                    <label></label>
-                                </div>
-                            </td>
-                            <td><i class="i-color folder icon"></i></td>
-                            <td><a href="#">one</a></td>
-                            <td>PC ONE</td>
-                            <td></td>
-                            <td>LionHL</td>
-                            <td>9/21/16 11:45AM</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="ui checkbox">
-                                    <input type="checkbox" checked="checked" name="example" tabindex="0" class="hidden">
-                                    <label></label>
-                                </div>
-                            </td>
-                            <td><i class="i-color folder icon"></i></td>
-                            <td><a href="#">life</a></td>
-                            <td>PC life</td>
-                            <td></td>
-                            <td>LionHL</td>
-                            <td>9/21/16 11:45AM</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="ui checkbox">
-                                    <input type="checkbox" checked="checked" name="example" tabindex="0" class="hidden">
-                                    <label></label>
-                                </div>
-                            </td>
-                            <td><i class="i-color folder icon"></i></td>
-                            <td><a href="#">life</a></td>
-                            <td>PC life</td>
-                            <td></td>
-                            <td>LionHL</td>
-                            <td>9/21/16 11:45AM</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="ui checkbox">
-                                    <input type="checkbox" checked="checked" name="example" tabindex="0" class="hidden">
-                                    <label></label>
-                                </div>
-                            </td>
-                            <td><i class="i-color folder icon"></i></td>
-                            <td><a href="#">life</a></td>
-                            <td>PC life</td>
-                            <td></td>
-                            <td>LionHL</td>
-                            <td>9/21/16 11:45AM</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="ui checkbox">
-                                    <input type="checkbox" checked="checked" name="example" tabindex="0" class="hidden">
-                                    <label></label>
-                                </div>
-                            </td>
-                            <td><i class="i-color folder icon"></i></td>
-                            <td><a href="#">life</a></td>
-                            <td>PC life</td>
-                            <td></td>
-                            <td>LionHL</td>
-                            <td>9/21/16 11:45AM</td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="ui checkbox">
-                                    <input type="checkbox" checked="checked" name="example" tabindex="0" class="hidden">
-                                    <label></label>
-                                </div>
-                            </td>
-                            <td><i class="i-color folder icon"></i></td>
-                            <td><a href="#">last</a></td>
-                            <td>PC life</td>
-                            <td></td>
-                            <td>LionHL</td>
-                            <td>9/21/16 11:45AM</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <!-- nfm-table end -->
         </div>
+      </div>
+      <!-- operate end-->
+      <!-- nfm table start-->
+      <div class="nfm-table">
+        <table class="nfm ui fixed table">
+          <thead>
+            <tr>
+              <th style="width:40px;">
+                <div class="ui checkbox">
+                  <input type="checkbox" name="example" tabindex="0" class="hidden">
+                  <label></label>
+                </div>
+              </th>
+              <th style="width:40px;"></th>
+              <th style="width:300px;">Name</th>
+              <th style="width:150px;">Title</th>
+              <th style="width:100px;">Size</th>
+              <th style="width:100px;">Author</th>
+              <th>Date last modified</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width:40px;">
+                <div class="ui checkbox">
+                  <!-- 备注：.ui.checkbox input:checked ~ .box:after -->
+                  <input type="checkbox" checked="checked" name="example" tabindex="0" class="hidden">
+                  <label></label>
+                </div>
+              </td>
+              <td style="width:40px;"><i class="i-color folder icon"></i></td>
+              <td style="width:300px;">
+                <div class="ui input">
+                  <input type="text" value="fmall">
+                </div>
+              </td>
+              <td style="width:150px;">旗舰店</td>
+              <td style="width:100px;"></td>
+              <td style="width:100px;">LionHL</td>
+              <td>9/21/16 11:45AM</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ui checkbox">
+                  <input type="checkbox" checked="checked" name="example" tabindex="0" class="hidden">
+                  <label></label>
+                </div>
+              </td>
+              <td><i class="i-color folder icon"></i></td>
+              <td><a href="#">one</a></td>
+              <td>PC ONE</td>
+              <td></td>
+              <td>LionHL</td>
+              <td>9/21/16 11:45AM</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ui checkbox">
+                  <input type="checkbox" checked="checked" name="example" tabindex="0" class="hidden">
+                  <label></label>
+                </div>
+              </td>
+              <td><i class="i-color folder icon"></i></td>
+              <td><a href="#">life</a></td>
+              <td>PC life</td>
+              <td></td>
+              <td>LionHL</td>
+              <td>9/21/16 11:45AM</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ui checkbox">
+                  <input type="checkbox" checked="checked" name="example" tabindex="0" class="hidden">
+                  <label></label>
+                </div>
+              </td>
+              <td><i class="i-color folder icon"></i></td>
+              <td><a href="#">life</a></td>
+              <td>PC life</td>
+              <td></td>
+              <td>LionHL</td>
+              <td>9/21/16 11:45AM</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ui checkbox">
+                  <input type="checkbox" checked="checked" name="example" tabindex="0" class="hidden">
+                  <label></label>
+                </div>
+              </td>
+              <td><i class="i-color folder icon"></i></td>
+              <td><a href="#">life</a></td>
+              <td>PC life</td>
+              <td></td>
+              <td>LionHL</td>
+              <td>9/21/16 11:45AM</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ui checkbox">
+                  <input type="checkbox" checked="checked" name="example" tabindex="0" class="hidden">
+                  <label></label>
+                </div>
+              </td>
+              <td><i class="i-color folder icon"></i></td>
+              <td><a href="#">life</a></td>
+              <td>PC life</td>
+              <td></td>
+              <td>LionHL</td>
+              <td>9/21/16 11:45AM</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ui checkbox">
+                  <input type="checkbox" checked="checked" name="example" tabindex="0" class="hidden">
+                  <label></label>
+                </div>
+              </td>
+              <td><i class="i-color folder icon"></i></td>
+              <td><a href="#">last</a></td>
+              <td>PC life</td>
+              <td></td>
+              <td>LionHL</td>
+              <td>9/21/16 11:45AM</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- nfm-table end -->
     </div>
-    <script type="text/javascript" src="/script/index.js"></script>
+  </div>
+  <script src="/script/index.js"></script>
 </body>
+
 </html>
