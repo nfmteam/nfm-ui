@@ -1,25 +1,25 @@
 /* 头部样式 相对semantic做样式调整 */
 
-.nfm.header {
+.nfm-header {
   position: relative;
   padding: 9px 10px;
   z-index: 9;
 }
 
-.nfm.header .nfm.menu {
+.nfm-header .menu {
   margin: 0;
   border: 0;
   border-radius: 0;
   min-height: auto;
 
+  .logo {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
   .item {
     padding: 0 10px !important;
     line-height: 30px;
-  }
-
-  .nfm.logo {
-    font-size: 16px;
-    font-weight: 700;
   }
 
   .item i.icon {

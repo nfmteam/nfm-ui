@@ -11,19 +11,19 @@
   }
 }
 
-/*  header */
-.nfm.header {
+/* header */
+.nfm-header {
   background-color: #191919;
   border-bottom: 2px solid #444;
 }
 
-.nfm.header .nfm.menu {
-  .item {
-    color: rgba(255, 255, 255, .7);
+.nfm-header .menu {
+  .logo {
+    color: rgba(255, 255, 255, .9);
   }
 
-  .nfm.logo {
-    color: rgba(255, 255, 255, .9);
+  .item {
+    color: rgba(255, 255, 255, .7);
   }
 
   a.item:hover {
@@ -32,12 +32,12 @@
 }
 
 /* sidebar */
-.nfm.sidebar {
+.nfm-sidebar {
   background-color: rgba(25, 25, 25, .95);
   border-right: 1px solid rgba(34, 36, 38, .15);
 }
 
-.nfm .main-sidebar li > a {
+.sidebar-main li > a {
   color: rgba(255, 255, 255, .6);
 
   &:hover {
@@ -45,14 +45,14 @@
   }
 }
 
-/* content */
-.nfm.content {
+/* workspace */
+.nfm-workspace {
   background-color: rgba(255, 255, 255, .7);
   border-left: 5px solid #444;
 }
 
 /* operate */
-.nfm.operate {
+.nfm-workspace {
   .nfm.buttons .button:hover {
     color: #000;
     background-color: rgba(255, 255, 255, .9);
@@ -73,7 +73,7 @@
 }
 
 /* table */
-.nfm.table {
+.workspace-table {
   tbody tr:nth-child(even) {
     background-color: rgba(0, 0, 50, .02);
   }

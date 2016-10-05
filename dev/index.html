@@ -11,17 +11,11 @@
 </head>
 
 <body>
-  <div class="nfm wrap">
-    <!-- loadingbar start-->
-    <div class="loadingbar waiting">
-      <dt></dt>
-      <dd></dd>
-    </div>
-    <!-- loadingbar end-->
+  <div class="nfm-container">
     <!-- header start -->
-    <div class="nfm header">
-      <div class="nfm ui secondary menu">
-        <div class="nfm logo item">NFM</div>
+    <div class="nfm-header">
+      <div class="ui secondary menu">
+        <div class="logo item">NFM</div>
         <div class="right menu">
           <a class="item" href="javascript:;">LionHL</a>
           <a class="item" href="javascript:;"><i class="sign out icon"></i>Sign out</a>
@@ -30,8 +24,8 @@
     </div>
     <!-- header end -->
     <!-- sidebar start -->
-    <div class="nfm sidebar">
-      <div class="main-sidebar">
+    <div class="nfm-sidebar">
+      <div class="sidebar-main">
         <ul>
           <li>
             <a href="javascript:;">
@@ -161,9 +155,10 @@
       </div>
     </div>
     <!-- sidebar end -->
-    <div class="nfm content">
+    <!-- workspace start -->
+    <div class="nfm-workspace">
       <!-- operate start-->
-      <div class="nfm operate">
+      <div class="workspace-operate">
         <!-- search start -->
         <!-- 备注：搜索时loading状态  添加.loading -->
         <div class="ui icon input">
@@ -171,7 +166,7 @@
           <i class="search icon"></i>
         </div>
         <!-- search end -->
-        <div class="nfm ui basic buttons">
+        <div class="ui basic buttons">
           <button class="ui button">
                         <i class="wizard icon"></i>
                         New
@@ -197,8 +192,8 @@
       </div>
       <!-- operate end-->
       <!-- nfm table start-->
-      <div class="nfm-table">
-        <table class="nfm ui fixed table">
+      <div class="workspace-table">
+        <table class="ui fixed table">
           <thead>
             <tr>
               <th style="width:40px;">
@@ -324,7 +319,14 @@
       </div>
       <!-- nfm-table end -->
     </div>
+    <!-- workspace end -->
   </div>
+  <!-- loadingbar start-->
+  <div class="nfm-loadingbar waiting">
+    <dt></dt>
+    <dd></dd>
+  </div>
+  <!-- loadingbar end-->
   <script src="/script/index.js"></script>
 </body>
 
