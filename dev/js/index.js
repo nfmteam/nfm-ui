@@ -13,7 +13,8 @@ var app = {
   cacheElements: function () {
     var self = this;
 
-    self.$loadingbar = $('.loadingbar');
+    self.$loadingbar = $('.nfm-loadingbar');
+    self.$message = $('.nfm-message');
   },
 
   bindEvents: function () {
@@ -23,6 +24,16 @@ var app = {
     setTimeout(function () {
       self.$loadingbar.addClass('end');
     }, 3000);
+
+    // show message
+    setTimeout(function () {
+      self.$message.addClass('show');
+    }, 1000);
+
+    // close message
+    self.$message.on('click', '.close', function () {
+      self.$message.removeClass('show').addClass('hide');
+    });
   }
 };
 

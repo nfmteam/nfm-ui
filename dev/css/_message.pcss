@@ -1,2 +1,28 @@
-/* message style start */
-/* message style end */
+/**
+ * message
+ */
+
+.nfm-message {
+  width: 350px;
+  position: fixed !important;
+  bottom: 15px;
+  right: -400px;
+  z-index: 1000;
+  transition: right 500ms ease-in-out;
+
+  &.show {
+    animation: show .5s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  @at-root {
+    @keyframes show {
+      0% { right: -400px; }
+      100% { right: 35px; }
+    }
+  }
+
+  &.hide {
+    right: -400px;
+  }
+}
