@@ -22,7 +22,8 @@ const customRules = {
     'declaration-empty-line-before': 'never',
     'indentation': 2,
     'rule-nested-empty-line-before': ['always-multi-line', {
-      except: ['first-nested']
+      except: ['first-nested'],
+      ignore: ["after-comment"]
     }],
     'rule-non-nested-empty-line-before': ['always', {
       except: ['after-single-line-comment'],
