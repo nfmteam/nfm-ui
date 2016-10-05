@@ -1,4 +1,7 @@
-/* loadingbar css start */
+/*
+  loadingbar
+*/
+
 .loadingbar {
   position: fixed;
   z-index: 2147483647;
@@ -13,7 +16,7 @@
     position: absolute;
     top: 0;
     height: 2px;
-    border-radius: 100%;
+    border-radius: 50%;
   }
 
   dt {
@@ -30,20 +33,24 @@
     clip: rect(-6px, 22px, 14px, 10px);
   }
 
+  /* loadingbar加载中 */
   &.waiting {
     width: 0;
     animation: move 10s linear forwards;
   }
 
-  &.waiting dd, &.waiting dt {
+  &.waiting dd, 
+  &.waiting dt {
     animation: pulse 1.5s ease-out 1.8s infinite;
   }
 
+  /* loadingbar完成 */
   &.end {
     width: 30%;
     animation: end .5s linear forwards;
   }
 
+  /* 定义loadingbar的动画效果 */
   @at-root {
     @keyframes move {
       0% { width: 0; }
@@ -69,5 +76,3 @@
     }
   }
 }
-
-/* loadingbar css end */
