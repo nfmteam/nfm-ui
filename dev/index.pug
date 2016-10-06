@@ -1,0 +1,299 @@
+doctype html
+html(lang='zh-CN')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
+    meta(name='viewport' content='width=device-width initial-scale=1.0 maximum-scale=1.0')
+    title nfm-ui
+    link(rel='stylesheet' href='/libs/semantic/dist/semantic.css')
+    link(rel='stylesheet' href='/css/load.css')
+    link(rel='stylesheet' href='/css/nfm.css')
+  body
+    // 载入动画 start
+    .nfm-load
+      .spinner
+        .double-bounce1
+        .double-bounce2
+    // 载入动画 end
+    .nfm-container
+      // header start
+      .nfm-header
+        .ui.secondary.menu
+          .logo.item NFM
+          .right.menu
+            a.item(href='javascript:;') LionHL
+            a.item(href='javascript:;')
+              i.sign.out.icon
+              | Sign out
+      // header end
+      // sidebar start
+      .nfm-sidebar
+        .sidebar-main
+          ul
+            li
+              a(href='javascript:;')
+                i.mini.caret.down.icon
+                i.i-color.folder.open.icon
+                i.spinner.loading.icon
+                |  css
+              ul
+                li
+                  a(href='javascript:;')
+                    i.mini.caret.down.icon
+                    i.i-color.folder.open.icon
+                    i.spinner.loading.icon
+                    |  index
+                  ul
+                    li
+                      a(href='javascript:;')
+                        i.mini.icon
+                        i.nfm-icon.i-css.icon
+                        |  index.css
+                    li
+                      a(href='javascript:;')
+                        i.mini.icon
+                        i.nfm-icon.i-postcss.icon
+                        |  modules.pcss
+                li
+                  a(href='javascript:;')
+                    i.mini.caret.down.icon
+                    i.i-color.folder.open.icon
+                    i.spinner.loading.icon
+                    |  layout
+                  ul
+                    li
+                      a(href='javascript:;')
+                        i.mini.icon
+                        i.nfm-icon.i-css.icon
+                        |  layout.css
+            li
+              a(href='javascript:;')
+                i.mini.caret.down.icon
+                i.i-color.folder.open.icon
+                i.spinner.loading.icon
+                |  images
+              ul
+                li
+                  a(href='javascript:;')
+                    i.mini.icon
+                    i.nfm-icon.i-image.icon
+                    |  banner_01.jpg
+                li
+                  a(href='javascript:;')
+                    i.mini.icon
+                    i.nfm-icon.i-image.icon
+                    |  banner_02.jpg
+                li
+                  a(href='javascript:;')
+                    i.mini.icon
+                    i.nfm-icon.i-image.icon
+                    |  banner_03.jpg
+                li
+                  a(href='javascript:;')
+                    i.mini.icon
+                    i.nfm-icon.i-image.icon
+                    |  banner_04.jpg
+                li
+                  a(href='javascript:;')
+                    i.mini.icon
+                    i.nfm-icon.i-image.icon
+                    |  banner_05.jpg
+                li
+                  a(href='javascript:;')
+                    i.mini.icon
+                    i.nfm-icon.i-image.icon
+                    |  sprites.png
+            li
+              a(href='javascript:;')
+                i.mini.caret.down.icon
+                i.i-color.folder.open.icon
+                i.spinner.loading.icon
+                |  js
+              ul
+                li
+                  a(href='javascript:;')
+                    i.mini.icon
+                    i.nfm-icon.i-js.icon
+                    |  index.js
+                li
+                  a(href='javascript:;')
+                    i.mini.icon
+                    i.nfm-icon.i-js.icon
+                    |  detail.js
+                li
+                  a(href='javascript:;')
+                    i.mini.icon
+                    i.nfm-icon.i-js.icon
+                    |  layout.js
+            li
+              a(href='javascript:;')
+                i.mini.caret.right.icon
+                i.i-color.folder.icon
+                i.spinner.loading.icon
+                |  Node4
+      // sidebar end
+      // workspace start
+      .nfm-workspace
+        // operate start
+        .workspace-operate
+          // search start
+          // 备注：搜索时loading状态  添加.loading
+          .ui.icon.input
+            input(type='text' placeholder='Search...')
+            i.search.icon
+          // search end
+          .ui.small.buttons
+            button.ui.primary.basic.button
+              i.wizard.icon
+              |             New
+            button.ui.primary.basic.button
+              i.upload.icon
+              |             Upload
+        // operate end
+        .workspace-breadcrumb
+          i.home.icon
+          .ui.small.breadcrumb
+            a.section Home
+            .divider  / 
+            a.section Store
+            .divider  / 
+            .active.section T-Shirt
+        // nfm table start
+        .workspace-table
+          table.ui.fixed.table
+            thead
+              tr
+                th(style='width:40px;')
+                  .ui.checkbox
+                    input.hidden(type='checkbox' name='example' tabindex='0')
+                    label
+                th(style='width:40px;')
+                th(style='width:300px;') Name
+                th(style='width:150px;') Title
+                th(style='width:100px;') Size
+                th(style='width:100px;') Author
+                th Date last modified
+            tbody
+              tr
+                td(style='width:40px;')
+                  .ui.checkbox
+                    // 备注：.ui.checkbox input:checked ~ .box:after
+                    input.hidden(type='checkbox' checked='checked' name='example' tabindex='0')
+                    label
+                td(style='width:40px;')
+                  i.i-color.folder.icon
+                td(style='width:300px;')
+                  .ui.input
+                    input(type='text' value='fmall')
+                td(style='width:150px;') 旗舰店
+                td(style='width:100px;')
+                td(style='width:100px;') LionHL
+                td 9/21/16 11:45AM
+              tr
+                td
+                  .ui.checkbox
+                    input.hidden(type='checkbox' checked='checked' name='example' tabindex='0')
+                    label
+                td
+                  i.i-color.folder.icon
+                td
+                  a(href='#') one
+                td PC ONE
+                td
+                td LionHL
+                td 9/21/16 11:45AM
+              tr
+                td
+                  .ui.checkbox
+                    input.hidden(type='checkbox' checked='checked' name='example' tabindex='0')
+                    label
+                td
+                  i.i-color.folder.icon
+                td
+                  a(href='#') life
+                td PC life
+                td
+                td LionHL
+                td 9/21/16 11:45AM
+              tr
+                td
+                  .ui.checkbox
+                    input.hidden(type='checkbox' checked='checked' name='example' tabindex='0')
+                    label
+                td
+                  i.i-color.folder.icon
+                td
+                  a(href='#') life
+                td PC life
+                td
+                td LionHL
+                td 9/21/16 11:45AM
+              tr
+                td
+                  .ui.checkbox
+                    input.hidden(type='checkbox' checked='checked' name='example' tabindex='0')
+                    label
+                td
+                  i.i-color.folder.icon
+                td
+                  a(href='#') life
+                td PC life
+                td
+                td LionHL
+                td 9/21/16 11:45AM
+              tr
+                td
+                  .ui.checkbox
+                    input.hidden(type='checkbox' checked='checked' name='example' tabindex='0')
+                    label
+                td
+                  i.i-color.folder.icon
+                td
+                  a(href='#') life
+                td PC life
+                td
+                td LionHL
+                td 9/21/16 11:45AM
+              tr
+                td
+                  .ui.checkbox
+                    input.hidden(type='checkbox' checked='checked' name='example' tabindex='0')
+                    label
+                td
+                  i.i-color.folder.icon
+                td
+                  a(href='#') last
+                td PC life
+                td
+                td LionHL
+                td 9/21/16 11:45AM
+        // nfm-table end
+      // workspace end
+    // message start
+    .nfm-message.ui.blue.message
+      i.close.icon
+      .header 提示：
+      p 这里是提示信息。
+    // message end
+    // dialog alert start
+    // 添加class active显示弹窗
+    .nfm-dialog-alert.ui.dimmer.visible
+      .ui.small.modal.active
+        .header
+          | Modal Title
+        .content
+          p Are you sure you want to delete your account
+        .actions
+          .ui.red.cancel.button
+            i.remove.icon
+            |  No
+          .ui.green.ok.button
+            i.checkmark.icon
+            |  Yes
+    // dialog alert end
+    // loadingbar start
+    .nfm-loadingbar.waiting
+      dt
+      dd
+    // loadingbar end
+    script(src='/script/index.js')

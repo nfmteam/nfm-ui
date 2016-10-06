@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "node bin/app",
+    "start": "DEBUG=* node bin/app",
     "test": "npm run test:stylelint && npm run test:eslint",
     "test:stylelint": "stylelint 'dev/css/**/*.pcss'",
     "test:eslint": "eslint 'dev/js/**/*.js'",
@@ -40,6 +40,8 @@
     "glob": "^7.1.0",
     "koa": "^1.2.4",
     "koa-favicon": "^1.2.1",
+    "koa-pug": "^3.0.0-0",
+    "koa-router": "^5.4.0",
     "koa-static": "^2.0.0",
     "koa-webpack-dev-middleware": "^1.2.2",
     "postcss": "^5.1.2",

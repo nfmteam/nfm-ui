@@ -5,7 +5,9 @@ const koa = require('koa');
 const app = koa();
 const serve = require('koa-static');
 const favicon = require('koa-favicon');
+const Pug = require('koa-pug');
 
+const router = require('./router');
 const cssInterceptor = require('./cssInterceptor');
 const webpack = require('webpack');
 const webpackMiddleware = require('koa-webpack-dev-middleware');
@@ -27,6 +29,18 @@ app.use(webpackMiddleware(webpack(webpackConfig), {
     colors: true
   }
 }));
+
+// view engine
+const pug = new Pug({
+  viewPath: './dev',
+  basedir: './dev',
+  noCache: false,
+  debug: true,
+  app: app
+});
+
+// router
+app.use(router.routes());
 
 // static, eg: images, html
 app.use(serve(devPath));
