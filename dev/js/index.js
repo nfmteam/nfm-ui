@@ -16,6 +16,7 @@ var app = {
     self.$laod = $('.nfm-load');
     self.$loadingbar = $('.nfm-loadingbar');
     self.$message = $('.nfm-message');
+    self.$dialogAlert = $('.J_Dialog_Alert');
   },
 
   bindEvents: function () {
