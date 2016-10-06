@@ -20,13 +20,13 @@
     margin: auto;
   }
 
-  .double-bounce1, 
+  .double-bounce1,
   .double-bounce2 {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     background-color: #fff;
-    opacity: 0.6;
+    opacity: .6;
     position: absolute;
     top: 0;
     left: 0;
@@ -39,11 +39,12 @@
 
   @at-root {
     @keyframes load-loading {
-      0%, 100% { 
-        transform: scale(0.0);
-        -webkit-transform: scale(0.0);
-      } 
-      50% { 
+      0%, 100% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+      }
+
+      50% {
         transform: scale(1.0);
         -webkit-transform: scale(1.0);
       }
@@ -57,12 +58,13 @@
 
   @at-root {
     @keyframes load-end {
-      0% { 
-        opacity: 1; 
+      0% {
+        opacity: 1;
       }
-      100% { 
-        opacity: 0; 
-        display: none; 
+
+      100% {
+        opacity: 0;
+        display: none;
       }
     }
   }
