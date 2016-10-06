@@ -18,8 +18,8 @@
     "css:rename": "renamer --find 'pcss' --replace 'css' dist/css/**/*.pcss",
     "css:process": "node build/css-process",
     "header": "node build/header",
-    "html": "",
-    "__build__": "npm run clean && npm run copy && npm run css && npm run header",
+    "pug": "pug -o dist -P dev",
+    "__build__": "npm run clean && npm run copy && npm run css && npm run header && npm run pug",
     "build": "npm run test && npm run __build__"
   },
   "repository": {
