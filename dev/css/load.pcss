@@ -1,0 +1,73 @@
+/**
+ * 载入动画
+ */
+
+.nfm-load {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background: #2c3e50;
+
+  .spinner {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    z-index: 10001;
+    top: 40%;
+    margin: auto;
+  }
+
+  .double-bounce1, 
+  .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: load-loading 2.0s infinite ease-in-out;
+  }
+
+  .double-bounce2 {
+    animation-delay: -1.0s;
+  }
+
+  @at-root {
+    @keyframes load-loading {
+      0%, 100% { 
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+      } 
+      50% { 
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+      }
+    }
+  }
+}
+
+.nfm-load.end {
+  animation: load-end 1s ease-out;
+  animation-fill-mode: forwards;
+
+  @at-root {
+    @keyframes load-end {
+      0% { 
+        opacity: 1; 
+      }
+      100% { 
+        opacity: 0; 
+        display: none; 
+      }
+    }
+  }
+
+  .spinner {
+    display: none;
+  }
+}
