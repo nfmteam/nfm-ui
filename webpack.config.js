@@ -16,16 +16,5 @@ module.exports = [
       path: getPath('dist/js/'),
       filename: '[name].js'
     }
-  },
-
-  // load
-  {
-    entry: {
-      'load': getPath('dev/js/load')
-    },
-    output: {
-      path: getPath('dist/js/'),
-      filename: '[name].js'
-    }
   }
 ];
