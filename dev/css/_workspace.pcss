@@ -13,7 +13,7 @@
 /* 操作按钮 */
 .workspace-operate {
   @mixin clearfix;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 
   .buttons {
     border-radius: 4px;
@@ -28,6 +28,16 @@
   .buttons .button:last-child {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
+  }
+}
+
+/* 面包屑导航 */
+.workspace-breadcrumb {
+  @mixin clearfix;
+  margin-bottom: 15px;
+
+  .ui.breadcrumb {
+    vertical-align: inherit;
   }
 }
 
