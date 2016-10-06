@@ -24,17 +24,17 @@ var app = {
     // end
     setTimeout(function () {
       self.$laod.addClass('end');
-    }, 3000);
+    }, 1000);
 
     // loadingbar
     setTimeout(function () {
       self.$loadingbar.addClass('end');
-    }, 5000);
+    }, 3000);
 
     // show message
     setTimeout(function () {
       self.$message.addClass('show');
-    }, 4000);
+    }, 2000);
 
     // close message
     self.$message.on('click', '.close', function () {
