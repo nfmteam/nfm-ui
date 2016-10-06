@@ -1,0 +1,39 @@
+doctype html
+html(lang='zh-CN')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
+    meta(name='viewport' content='width=device-width initial-scale=1.0 maximum-scale=1.0')
+    title nfm-ui
+    link(rel='stylesheet' href='/libs/semantic/dist/semantic.css')
+    block header
+  body
+    block body
+    // message start
+    .nfm-message.ui.blue.message
+      i.close.icon
+      .header 提示：
+      p 这里是提示信息。
+    // message end
+    // dialog alert start
+    // 添加class active显示弹窗
+    .nfm-dialog-alert.ui.dimmer.visible
+      .ui.small.modal.active
+        .header
+          | Modal Title
+        .content
+          p Are you sure you want to delete your account
+        .actions
+          .ui.red.cancel.button
+            i.remove.icon
+            |  No
+          .ui.green.ok.button
+            i.checkmark.icon
+            |  Yes
+    // dialog alert end
+    // loadingbar start
+    .nfm-loadingbar.waiting
+      dt
+      dd
+    // loadingbar end
+    block footer
