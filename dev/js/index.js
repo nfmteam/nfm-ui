@@ -31,14 +31,20 @@ var app = {
       self.$loadingbar.addClass('end');
     }, 3000);
 
-    // show message
+    // message in
     setTimeout(function () {
-      self.$message.addClass('show');
+      self.$message.addClass('in');
     }, 2000);
+
+    // message out
+    var messageOutTimer = setTimeout(function () {
+      self.$message.addClass('out');
+    }, 6000);
 
     // close message
     self.$message.on('click', '.close', function () {
-      self.$message.removeClass('show').addClass('hide');
+      window.clearTimeout(messageOutTimer);
+      self.$message.removeClass('in out').addClass('close');
     });
   }
 };

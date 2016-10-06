@@ -10,19 +10,29 @@
   z-index: 10000;
   transition: right 500ms ease-in-out;
 
-  &.show {
-    animation: show .5s ease-out;
+  &.in {
+    animation: in .5s ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  &.out {
+    animation: out .5s ease-out;
     animation-fill-mode: forwards;
   }
 
   @at-root {
-    @keyframes show {
+    @keyframes in {
       0% { right: -400px; }
       100% { right: 35px; }
     }
+
+    @keyframes out {
+      0% { right: 35px; }
+      100% { right: -400px; }
+    }
   }
 
-  &.hide {
+  &.close {
     right: -400px;
   }
 }
