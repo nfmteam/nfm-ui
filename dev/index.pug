@@ -258,6 +258,43 @@ block body
               td 9/21/16 11:45AM
       // nfm-table end
     // workspace end
+    // history start
+    .nfm-history
+      h4.history-title.clearfix
+        span.left 文件历史
+        a.right(href='javascript:;')
+          i.remove.icon.history-close
+      h4.ui.horizontal.divider
+        i.history.icon
+      .history-list
+        .ui.feed.clearfix
+          .event
+            .label
+              img(src='http://semantic-ui.com/images/avatar/small/elliot.jpg')
+            .content
+              .summary
+                .date 4 hours ago
+                i.icon.repeat
+                i.icon.file.code.outline
+        .ui.feed.clearfix
+          .event
+            .label
+              img(src='http://semantic-ui.com/images/avatar/small/jenny.jpg')
+            .content
+              .summary
+                .date 2 days ago
+                i.icon.repeat
+                i.icon.file.code.outline
+        .ui.feed.clearfix
+          .event
+            .label
+              img(src='http://semantic-ui.com/images/avatar/small/laura.jpg')
+            .content
+              .summary
+                .date 2 years age
+                i.icon.repeat
+                i.icon.file.code.outline
+    // history end
 
 block footer
   script(src='/script/index.js')
