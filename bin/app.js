@@ -34,7 +34,7 @@ app.use(webpackMiddleware(webpack(webpackConfig), {
 const pug = new Pug({
   viewPath: './dev',
   basedir: './dev',
-  noCache: false,
+  noCache: true,
   debug: true,
   app: app
 });

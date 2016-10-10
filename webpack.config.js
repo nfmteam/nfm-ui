@@ -7,10 +7,10 @@ function getPath(jsPath) {
 }
 
 module.exports = [
-  // index
   {
     entry: {
-      'index': getPath('dev/js/index')
+      'index': getPath('dev/js/index'),
+      'statistic': getPath('dev/js/statistic')
     },
     output: {
       path: getPath('dist/js/'),

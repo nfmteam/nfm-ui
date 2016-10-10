@@ -9,4 +9,11 @@ router.get('/', function* () {
   this.render('index');
 });
 
+/**
+ * Statistic
+ */
+router.get('/statistic', function* () {
+  this.render('statistic');
+});
+
 module.exports = router;

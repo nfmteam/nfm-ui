@@ -1,0 +1,16 @@
+extends layouts/_layout
+
+block header
+  link(rel='stylesheet' href='/css/load.css')
+  link(rel='stylesheet' href='/css/nfm.css')
+
+block body
+  .nfm-container-statistic
+    // header start
+    include layouts/_header
+    // header end
+    .statistic-body
+      h3 文件统计
+
+block footer
+  script(src='/script/statistic.js')
