@@ -1,6 +1,7 @@
 extends layouts/_layout
 
 block header
+  link(rel='stylesheet' href='/libs/c3/c3.css')
   link(rel='stylesheet' href='/css/load.css')
   link(rel='stylesheet' href='/css/nfm.css')
 
@@ -11,6 +12,25 @@ block body
     // header end
     .statistic-body
       h3 文件统计
+      .ui.two.column.grid
+        .column
+          .ui.blue.segment 类型统计图
+            .chart
+        .column
+          .ui.blue.segment 大小，数量统计图
+            table.ui.very.basic.table
+              tr
+                td
+                  i.folder.icon
+                  | 目录数
+                td 5234
+              tr
+                td
+                  i.file.icon
+                  | 文件数
+                td 5234
 
 block footer
+  script(src='/libs/d3/d3.js')
+  script(src='/libs/c3/c3.js')
   script(src='/script/statistic.js')

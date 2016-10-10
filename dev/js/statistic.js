@@ -7,6 +7,7 @@ var app = {
     var self = this;
 
     self.cacheElements();
+    self.initChart();
     self.bindEvents();
   },
 
@@ -14,6 +15,25 @@ var app = {
     var self = this;
 
     self.$loadingbar = $('.nfm-loadingbar');
+  },
+
+  initChart: function () {
+    window.c3.generate({
+      bindto: '.chart',
+      size: {
+        height: 300
+      },
+      data: {
+        columns: [
+          ['Javascript', 100],
+          ['CSS', 70],
+          ['HTML', 30],
+          ['Images', 50],
+          ['Other', 40]
+        ],
+        type: 'pie'
+      }
+    });
   },
 
   bindEvents: function () {
