@@ -1,6 +1,7 @@
 extends layouts/_layout
 
 block header
+  link(rel='stylesheet' href='/libs/hint.css/hint.css')
   link(rel='stylesheet' href='/css/load.css')
   link(rel='stylesheet' href='/css/nfm.css')
 
@@ -138,10 +139,10 @@ block body
               .item All Files
         // search end
         .ui.small.buttons
-          button.ui.primary.basic.button
+          button.ui.primary.basic.button.hint--bottom.hint--rounded(aria-label='Create a new folder')
             i.wizard.icon
             | New
-          button.ui.primary.basic.button
+          button.ui.primary.basic.button.hint--bottom.hint--rounded(aria-label='Upload files/zips')
             i.upload.icon
             | Upload
       // operate end
@@ -152,9 +153,10 @@ block body
           .divider  / 
           a.section Store
           .divider  / 
-          .active.section 
+          .active.section
             | T-Shirt
-            i.icon.empty.star.yellow
+            a.hint--bottom.hint--rounded(href='javascript:;' aria-label='Add to favorites')
+              i.icon.empty.star.yellow
       // nfm table start
       .workspace-table
         table.ui.fixed.table
