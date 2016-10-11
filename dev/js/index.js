@@ -19,6 +19,7 @@ var app = {
     self.$message = $('.nfm-message');
     self.$dialogAlert = $('.J_Dialog_Alert');
     self.$searchBtn = $('.J_SearchBtn');
+    self.$historyCloseBtn = $('.history-close');
   },
 
   bindEvents: function () {
@@ -65,6 +66,11 @@ var app = {
         self.$searchBtn.removeClass('active visible');
         self.$searchBtn.find('.menu').removeClass('transition visible');
       }
+    });
+
+    // history close
+    self.$historyCloseBtn.on('click', function () {
+      self.$historyCloseBtn.closest('.nfm-history').addClass('close');
     });
   }
 };

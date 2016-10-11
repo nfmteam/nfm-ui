@@ -29,4 +29,38 @@
       top: 2px;
     }
   }
+
+  &.close {
+    animation: history-close .5s;
+    animation-fill-mode: forwards;
+  }
+
+  @at-root {
+    @keyframes history-close {
+      0% {
+        right: 0;
+      }
+
+      100% {
+        right: -310px;
+      }
+    }
+  }
+
+  &.open {
+    animation: history-open .5s;
+    animation-fill-mode: forwards;
+  }
+
+  @at-root {
+    @keyframes history-open {
+      0% {
+        right: -310px;
+      }
+
+      100% {
+        right: 0;
+      }
+    }
+  }
 }
