@@ -126,10 +126,16 @@ block body
       // operate start
       .workspace-operate
         // search start
-        // 备注：搜索时loading状态  添加.loading
-        .ui.icon.input
+        // 备注：搜索时添加class loading，disabled
+        .ui.right.action.left.icon.input
+          i.icon.search
           input(type='text' placeholder='Search...')
-          i.search.icon
+          .J_SearchBtn.ui.basic.floating.dropdown.button
+            .text This Page
+            i.dropdown.icon
+            .menu
+              .item This Page
+              .item All Files
         // search end
         .ui.small.buttons
           button.ui.primary.basic.button

@@ -13,10 +13,12 @@ var app = {
   cacheElements: function () {
     var self = this;
 
+    self.$body = $('body');
     self.$laod = $('.nfm-load');
     self.$loadingbar = $('.nfm-loadingbar');
     self.$message = $('.nfm-message');
     self.$dialogAlert = $('.J_Dialog_Alert');
+    self.$searchBtn = $('.J_SearchBtn');
   },
 
   bindEvents: function () {
@@ -46,6 +48,23 @@ var app = {
     self.$message.on('click', '.close', function () {
       window.clearTimeout(messageOutTimer);
       self.$message.removeClass('in out').addClass('close');
+    });
+
+    // search button
+    self.$searchBtn.on('click', function () {
+      self.$searchBtn.addClass('active visible');
+      self.$searchBtn.find('.menu').addClass('transition visible');
+    });
+
+    self.$body.on('click', function (e) {
+      var $t = $(e.target);
+      var isInSearchBtn = !!$t.closest('.J_SearchBtn').length;
+      var isInSearchBtnMenu = !!$t.closest('.J_SearchBtn').length && !!$t.closest('.menu').length;
+
+      if(!isInSearchBtn || isInSearchBtnMenu) {
+        self.$searchBtn.removeClass('active visible');
+        self.$searchBtn.find('.menu').removeClass('transition visible');
+      }
     });
   }
 };
