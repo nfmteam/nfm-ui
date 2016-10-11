@@ -5,6 +5,7 @@
     "postcss-cssnext",
     "postcss-short"
   ],
+  "parser": "postcss-scss",
   "input": "dist/css/**/!(_*).pcss",
   "local-plugins": true,
   "postcss-cssnext": {

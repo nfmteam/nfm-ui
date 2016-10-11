@@ -4,6 +4,13 @@
 
 /* Alert */
 .nfm-dialog-alert {
+  &.ui.dimmer {
+    z-index: $dialogBgLayer;
+  }
+
+  &.ui.modal {
+    z-index: $dialogLayer;
+  }
 
   /* 重置定位 */
   .ui.modal {

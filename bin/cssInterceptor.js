@@ -7,6 +7,7 @@ const precss = require('precss');
 const postcssshort = require('postcss-short');
 const postcsseach = require('postcss-each');
 const cssnext = require('postcss-cssnext');
+const postcssScss = require('postcss-scss');
 
 module.exports = intercept;
 
@@ -49,5 +50,8 @@ function cssRender(pcssFilePath) {
       ]
     }),
     postcssshort
-  ]).process(css, { from: pcssFilePath })
+  ]).process(css, { 
+    from: pcssFilePath,
+    parser: postcssScss
+  });
 }

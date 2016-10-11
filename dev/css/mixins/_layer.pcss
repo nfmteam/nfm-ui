@@ -1,0 +1,31 @@
+/**
+ * z-index的层级
+ */
+
+/* 平面层 */
+$_baseLayer: 1;
+$headerLayer: calc($_baseLayer);
+
+$workspaceLayer: calc($_baseLayer + 1);
+$workspaceTableLayer: calc($_baseLayer + 2);
+
+$sidebarLayer: calc($_baseLayer + 10);
+$historyLayer: calc($_baseLayer + 10);
+
+/* dialog层 */
+$_dialogLayer: 100;
+
+$dialogBgLayer: calc($_dialogLayer + 1);
+$dialogLayer: calc($_dialogLayer + 2);
+
+/* 信息层 */
+$_messageLayer: 1000;
+
+$messageLayer: calc($_messageLayer + 1);
+$loadingbarLayer: calc($_messageLayer + 1);
+
+/* 载入动画层 */
+$_loadLayer: 10000;
+
+$loadLayer: calc($_loadLayer + 1);
+$loadSpinnerLayer: calc($_loadLayer + 2);
