@@ -23,6 +23,7 @@ var app = {
     self.$dialogAlert = $('.J_Dialog_Alert');
     self.$dialogNew = $('.J_Dialog_New');
     self.$dialogUpload = $('.J_Dialog_Upload');
+    self.$menu = $('.J_Menu');
   },
 
   bindEvents: function () {
@@ -103,6 +104,35 @@ var app = {
       var checked = $input.prop('checked');
 
       $input.prop('checked', !checked);
+    });
+
+    // menu
+    self.$body.on('contextmenu', function (e) {
+      var $t = $(e.target);
+      var isInWorkspaceTable = $t.closest('.workspace-table .table').length;
+      var x = e.clientX;
+      var y = e.clientY;
+
+      if (isInWorkspaceTable) {
+        self.$menu.css({
+          display: 'block',
+          left: x,
+          top: y
+        });
+
+        e.preventDefault();
+      } else {
+        self.$menu.css({
+          display: 'none'
+        });
+      }
+    });
+
+    // hide menu
+    self.$body.on('click', function () {
+      self.$menu.css({
+        display: 'none'
+      });
     });
   }
 };
