@@ -6,6 +6,8 @@
 .nfm-header {
   position: relative;
   padding: 10px;
+  background-color: $headerBgColor;
+  border-bottom: $headerBorderBottom;
   z-index: $headerLayer;
 }
 
@@ -18,11 +20,17 @@
   .logo {
     font-size: 18px;
     font-weight: 700;
+    color: $logoColor;
   }
 
   .item {
     padding: 0 10px !important;
     line-height: 30px;
+    color: $itemColor;
+
+    &:hover {
+      color: $itemColor_hover;
+    }
 
     img {
       width: 25px;

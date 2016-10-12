@@ -7,6 +7,7 @@
   padding: 10px 0;
   width: 250px;
   height: 100%;
+  background-color: $sidebarBgColor;
   overflow: hidden;
   z-index: $sidebarLayer;
 }
@@ -29,8 +30,13 @@
     display: inline-block;
     line-height: 20px;
     font-size: 14px;
+    color: $liAColor;
     white-space: nowrap;
     vertical-align: middle;
+
+    &:hover {
+      color: $liAColor_hover;
+    }
   }
 
   ul li > a i:first-child {

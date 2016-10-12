@@ -3,101 +3,56 @@
  */
 
 /* loadingbar */
-.nfm-theme-default .nfm-loadingbar,
-.nfm-loadingbar {
-  background-color: #ffa500;
-
-  dt, dd {
-    box-shadow: #ff0000 1px 0 6px 1px;
-  }
-}
+$loadingbarBgColor: #ffa500;
+$loadingbarBoxShadow: #ff0000 1px 0 6px 1px;
 
 /* header */
-.nfm-theme-default .nfm-header,
-.nfm-header {
-  background-color: #24262d;
-  border-bottom: 1px solid #444;
-
-  .menu {
-    .logo {
-      color: rgba(255, 255, 255, .9);
-    }
-
-    .item {
-      color: #aeafb2;
-    }
-
-    a.item:hover {
-      color: #fff !important;
-    }
-  }
-}
+$headerBgColor: #24262d;
+$headerBorderBottom: 1px solid #444;
+$logoColor: rgba(255, 255, 255, .9);
+$itemColor: #aeafb2;
+$itemColor_hover: #fff !important;
 
 /* sidebar */
-.nfm-theme-default .nfm-sidebar,
-.nfm-sidebar {
-  background-color: #343640;
-
-  .sidebar-main li > a {
-    color: rgba(255, 255, 255, .6);
-
-    &:hover {
-      color: rgba(255, 255, 255, .9);
-    }
-  }
-}
+$sidebarBgColor: #343640;
+$liAColor: rgba(255, 255, 255, .6);
+$liAColor_hover: rgba(255, 255, 255, .9);
 
 /* workspace */
-.nfm-theme-default .nfm-workspace,
-.nfm-workspace {
-  background-color: rgba(255, 255, 255, .7);
+$workspaceBgColor: rgba(255, 255, 255, .7);
 
-  .nfm.buttons .button:hover {
-    color: #000;
-    background-color: rgba(255, 255, 255, .9);
-  }
+$btnColor_hover: #000;
+$btnBgColor_hover: rgba(255, 255, 255, .9);
 
-  .nfm.buttons .button:active,
-  .nfm.buttons .button:focus {
-    color: rgba(255, 255, 255, .9);
-    background-color: #0B8BF1;
-  }
+$btnColor_active: rgba(255, 255, 255, .9);
+$btnBgColor_active: #0B8BF1;
 
-  .nfm.buttons .detele.button:hover,
-  .nfm.buttons .detele.button:focus,
-  .nfm.buttons .detele.button:active {
-    color: rgba(255, 255, 255, .9);
-    background-color: #DB2828;
-  }
-}
+$btnColor_focus: rgba(255, 255, 255, .9);
+$btnBgColor_focus: #0B8BF1;
+
+$deteleBtnColor_hover: rgba(255, 255, 255, .9);
+$deteleBtnColor_focus: rgba(255, 255, 255, .9);
+$deteleBtnColor_active: rgba(255, 255, 255, .9);
+
+$deteleBtnBgColor_hover: #DB2828;
+$deteleBtnBgColor_focus: #DB2828;
+$deteleBtnBgColor_active: #DB2828;
 
 /* table */
-.nfm-theme-default .nfm-table,
-.workspace-table {
-  tbody tr:nth-child(even) {
-    background-color: rgba(0, 0, 50, .02);
-  }
+$trEvenBgColor: rgba(0, 0, 50, .02);
+$trBoxShadow_hover: 0 0 0 #C9BA9B inset;
+$trBoxShadow_active: 0 0 0 #C9BA9B inset;
 
-  tbody tr:hover, tbody tr:active {
-    box-shadow: 0 0 0 #C9BA9B inset;
-    background-color: #fffaf3;
+$trBgColor_hover: #fffaf3;
+$trBgColor_active: #fffaf3;
 
-    td {
-      color: #573a08;
-    }
-  }
+$trHover_tdColor: #573a08;
+$trActive_tdColor: #573a08;
 
-  a {
-    color: rgba(0, 0, 0, .87);
-  }
+$tableAColor: rgba(0, 0, 0, .87);
 
-  .ui.input input:focus {
-    border-color: rgba(0, 0, 0, .3);
-  }
-}
+$inputBorderColor_focus: rgba(0, 0, 0, .3);
+
 
 /* 自定义icon颜色 */
-.nfm-theme-default i.i-color.icon,
-i.i-color.icon {
-  color: rgba(61, 163, 239, .95);
-}
+$iconColor: rgba(61, 163, 239, .95);

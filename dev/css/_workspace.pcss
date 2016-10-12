@@ -6,8 +6,43 @@
   position: absolute 50px 0 0 0;
   margin-left: 250px;
   padding: 20px 10px 10px;
+  background-color: $workspaceBgColor;
   overflow: scroll;
   z-index: $workspaceLayer;
+
+  .nfm.buttons .button {
+    &:hover {
+      color: $btnColor_hover;
+      background-color: $btnBgColor_hover;
+    }
+
+    &:active {
+      color: $btnColor_active;
+      background-color: $btnBgColor_active;
+    }
+
+    &:focus {
+      color: $btnColor_focus;
+      background-color: $btnBgColor_focus;
+    }
+  }
+
+  .nfm.buttons .detele.button {
+    &:hover {
+      color: $deteleBtnColor_hover;
+      background-color: $deteleBtnBgColor_hover;
+    }
+
+    &:focus {
+      color: $deteleBtnColor_focus;
+      background-color: $deteleBtnBgColor_focus;
+    }
+
+    &:active {
+      color: $deteleBtnColor_active;
+      background-color: $deteleBtnBgColor_active;
+    }
+  }
 }
 
 /* 操作按钮 */
@@ -81,6 +116,39 @@
   }
 }
 
+.nfm-table, .workspace-table {
+  tbody tr:nth-child(even) {
+    background-color: $trEvenBgColor;
+  }
+
+  tbody tr {
+    &:hover {
+      box-shadow: $trBoxShadow_hover;
+      background-color: $trBgColor_hover;
+
+      td {
+        color: $trHover_tdColor;
+      }
+    }
+
+    &:active {
+      box-shadow: $trBoxShadow_active;
+      background-color: $trBgColor_active;
+
+      td {
+        color: $trActive_tdColor;
+      }
+    }
+  }
+
+  a {
+    color: $tableAColor;
+  }
+
+  .ui.input input:focus {
+    border-color: $inputBorderColor_focus;
+  }
+}
 /* Menu */
 .nfm-menu {
   position: absolute;
