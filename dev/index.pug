@@ -159,7 +159,7 @@ block body
               i.icon.empty.star.yellow
       // nfm table start
       .workspace-table
-        table.ui.fixed.table
+        table.ui.fixed.table.grey
           thead
             tr
               th(style='width:40px;')
@@ -167,7 +167,11 @@ block body
               th(style='width:150px;') Title
               th(style='width:100px;') Size
               th(style='width:100px;') Author
-              th(style='width:150px;') Date last modified
+              th(style='width:150px;')
+                //- i.icon.down.caret
+                //- i.icon.caret.up
+                i.icon.sort.grey
+                | Date last modified
               th(style='width:100px;')
           tbody
             tr
