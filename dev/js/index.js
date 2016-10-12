@@ -22,6 +22,7 @@ var app = {
     self.$historyCloseBtn = $('.history-close');
     self.$dialogAlert = $('.J_Dialog_Alert');
     self.$dialogNew = $('.J_Dialog_New');
+    self.$dialogUpload = $('.J_Dialog_Upload');
   },
 
   bindEvents: function () {
@@ -85,10 +86,23 @@ var app = {
       self.$dialogNew.addClass('active');
     });
 
+    // upload
+    self.$body.on('click', '.J_Upload', function () {
+      self.$dialogUpload.addClass('active');
+    });
+
     // dialog close
     self.$body.on('click', '.J_Dialog_Close', function () {
       $(this).closest('.nfm-dialog').removeClass('active');
       return false;
+    });
+
+    // checkbox
+    self.$body.on('click', '.checkbox', function () {
+      var $input = $(this).find('input');
+      var checked = $input.prop('checked');
+
+      $input.prop('checked', !checked);
     });
   }
 };
