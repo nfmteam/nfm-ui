@@ -109,7 +109,7 @@ var app = {
     // menu
     self.$body.on('contextmenu', function (e) {
       var $t = $(e.target);
-      var isInWorkspaceTable = $t.closest('.workspace-table .table').length;
+      var isInWorkspaceTable = $t.closest('.workspace-table tbody').length;
       var x = e.clientX;
       var y = e.clientY;
 
