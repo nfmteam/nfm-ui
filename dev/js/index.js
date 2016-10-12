@@ -20,6 +20,7 @@ var app = {
     self.$dialogAlert = $('.J_Dialog_Alert');
     self.$searchBtn = $('.J_SearchBtn');
     self.$historyCloseBtn = $('.history-close');
+    self.$dialogAlert = $('.J_Dialog_Alert');
   },
 
   bindEvents: function () {
@@ -62,7 +63,7 @@ var app = {
       var isInSearchBtn = !!$t.closest('.J_SearchBtn').length;
       var isInSearchBtnMenu = !!$t.closest('.J_SearchBtn').length && !!$t.closest('.menu').length;
 
-      if(!isInSearchBtn || isInSearchBtnMenu) {
+      if (!isInSearchBtn || isInSearchBtnMenu) {
         self.$searchBtn.removeClass('active visible');
         self.$searchBtn.find('.menu').removeClass('transition visible');
       }
@@ -71,6 +72,16 @@ var app = {
     // history close
     self.$historyCloseBtn.on('click', function () {
       self.$historyCloseBtn.closest('.nfm-history').addClass('close');
+    });
+
+    // favorites
+    self.$body.on('click', '.J_Favorite', function () {
+      self.$dialogAlert.addClass('active');
+    });
+
+    // dialog alert close
+    self.$body.on('click', '.J_Dialog_Alert_Close', function () {
+      self.$dialogAlert.removeClass('active');
     });
   }
 };
