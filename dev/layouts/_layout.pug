@@ -16,21 +16,42 @@ html(lang='zh-CN')
       p 这里是提示信息。
     // message end
     // dialog alert start
-    // 添加class active显示弹窗
-    .J_Dialog_Alert.nfm-dialog-alert.ui.dimmer.visible
+    // 备注：添加class active显示弹窗
+    .J_Dialog_Alert.nfm-dialog.ui.dimmer.visible
       .ui.small.modal.active
-        .header
-          | Modal Title
+        .header Modal Title
         .content
           p Are you sure you want to delete your account
         .actions
-          .J_Dialog_Alert_Close.ui.red.cancel.button
+          .J_Dialog_Close.ui.red.cancel.button
             i.remove.icon
             |  No
-          .J_Dialog_Alert_Close.ui.green.ok.button
+          .ui.green.ok.button
             i.checkmark.icon
             |  Yes
     // dialog alert end
+
+    // new folder dialog start
+    // 备注：添加class active显示弹窗, form添加loading
+    .J_Dialog_New.nfm-dialog.ui.dimmer.visible
+      .ui.small.modal.active
+        .header New Folder
+        .content
+          form.ui.form
+            .field
+              label First Name
+              input(type='text' name='first-name' placeholder='First Name')
+            .field
+              label First Name
+              input(type='text' name='last-name' placeholder='Last Name')
+            .field
+              .ui.checkbox
+                input.hidden(type='checkbox' tabindex='0')
+                label I agree to the Terms and Conditions
+            button.ui.button.blue Submit
+            button.ui.button.J_Dialog_Close Cancel
+    // new folder dialog end
+
     // loadingbar start
     .nfm-loadingbar.waiting
       dt

@@ -21,6 +21,7 @@ var app = {
     self.$searchBtn = $('.J_SearchBtn');
     self.$historyCloseBtn = $('.history-close');
     self.$dialogAlert = $('.J_Dialog_Alert');
+    self.$dialogNew = $('.J_Dialog_New');
   },
 
   bindEvents: function () {
@@ -79,9 +80,15 @@ var app = {
       self.$dialogAlert.addClass('active');
     });
 
-    // dialog alert close
-    self.$body.on('click', '.J_Dialog_Alert_Close', function () {
-      self.$dialogAlert.removeClass('active');
+    // new folder
+    self.$body.on('click', '.J_NewFolder', function () {
+      self.$dialogNew.addClass('active');
+    });
+
+    // dialog close
+    self.$body.on('click', '.J_Dialog_Close', function () {
+      $(this).closest('.nfm-dialog').removeClass('active');
+      return false;
     });
   }
 };
