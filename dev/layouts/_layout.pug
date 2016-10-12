@@ -32,23 +32,29 @@ html(lang='zh-CN')
     // dialog alert end
 
     // new folder dialog start
-    // 备注：添加class active显示弹窗, form添加loading
+    // 备注：
+    //    nfm-dialog添加active显示弹窗 
+    //    form添加loading显示加载中效果
+    //    form添加error显示错误信息
     .J_Dialog_New.nfm-dialog.ui.dimmer.visible
       .ui.small.modal.active
         .header New Folder
         .content
           form.ui.form
-            .field
+            .field.required
               label First Name
               input(type='text' name='first-name' placeholder='First Name')
-            .field
-              label First Name
+            .field.required.error
+              label Last Name
               input(type='text' name='last-name' placeholder='Last Name')
             .field
               .ui.checkbox
                 input.hidden(type='checkbox' tabindex='0')
                 label I agree to the Terms and Conditions
-            button.ui.button.blue Submit
+            .ui.error.message
+              .header Error
+              p You can only sign up for an account once with a given e-mail address.
+            button.ui.button.green Submit
             button.ui.button.J_Dialog_Close Cancel
     // new folder dialog end
 
