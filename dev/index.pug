@@ -295,9 +295,18 @@ block body
 
     // menu start
     .J_Menu.nfm-menu.ui.vertical.menu
-      a.item(href='javascript:;') Link1
-      a.item(href='javascript:;') Link2
-      a.item(href='javascript:;') Link3
+      a.item(href='javascript:;')
+        i.icon.move
+        | Move
+      a.item(href='javascript:;')
+        i.icon.cloud.upload
+        | Publish 
+      a.item.J_History(href='javascript:;')
+        i.icon.history
+        | History
+      a.item(href='javascript:;')
+        i.icon.trash.red
+        | Delete
     // menu end
 
 block footer

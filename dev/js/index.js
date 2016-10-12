@@ -19,6 +19,7 @@ var app = {
     self.$message = $('.nfm-message');
     self.$dialogAlert = $('.J_Dialog_Alert');
     self.$searchBtn = $('.J_SearchBtn');
+    self.$history = $('.nfm-history');
     self.$historyCloseBtn = $('.history-close');
     self.$dialogAlert = $('.J_Dialog_Alert');
     self.$dialogNew = $('.J_Dialog_New');
@@ -72,9 +73,14 @@ var app = {
       }
     });
 
+    // history open
+    self.$body.on('click', '.J_History', function () {
+      self.$history.removeClass('close').addClass('open');
+    });
+
     // history close
     self.$historyCloseBtn.on('click', function () {
-      self.$historyCloseBtn.closest('.nfm-history').addClass('close');
+      self.$history.removeClass('open').addClass('close');
     });
 
     // favorites
