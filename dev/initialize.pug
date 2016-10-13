@@ -9,7 +9,25 @@ block header
 block body
   .nfm-container-initialize
     include layouts/_header
-    
+    .initialize-main
+      h1.ui.header 系统配置
+      .ui.divider
+      form.ui.form.J_Form
+        .field
+          label First Name
+          input(type='text' name='first-name' placeholder='First Name')
+        .field
+          label Last Name
+          input(type='text' name='last-name' placeholder='Last Name')
+        .field
+          .ui.toggle.checkbox
+            input.hidden(type='checkbox' name='public' tabindex='0')
+            label auto unzip
+        .ui.error.message
+          .header Error
+          p You can only sign up for an account once with a given e-mail address.
+        button.ui.green.button.J_Save(type='button') Save
+      </form>
 
 block footer
   script(src='/script/initialize.js')

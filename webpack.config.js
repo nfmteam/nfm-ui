@@ -10,7 +10,8 @@ module.exports = [
   {
     entry: {
       'index': getPath('dev/js/index'),
-      'statistic': getPath('dev/js/statistic')
+      'statistic': getPath('dev/js/statistic'),
+      'initialize': getPath('dev/js/initialize')
     },
     output: {
       path: getPath('dist/js/'),
