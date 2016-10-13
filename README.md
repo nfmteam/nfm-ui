@@ -12,6 +12,10 @@
 
 :art: The nfm's UI. base on [Semantic-UI](https://github.com/Semantic-Org/Semantic-UI).
 
+## Preview
+
+visit: [https://nfmteam.github.io/nfm-ui/](https://nfmteam.github.io/nfm-ui/)
+
 ## Usage
 
 ```shell
