@@ -59,7 +59,7 @@
   color: $bookmarkColor;
   border-bottom: $bookmarkBorderBottom;
 
-  .title {
+  .bookmark-header {
     @mixin clearfix;
 
     i.icon.bookmark {
@@ -73,24 +73,26 @@
   }
 
   &>ul {
-    padding: 10px 0 10px 20px;
+    padding: 10px 0 10px 2px;
   }
 
   li {
     position: relative;
     padding-right: 20px;
 
-    i.icon {
-      position: absolute 0 0 * *;
-      cursor: pointer;
-    }
-
-    a {
+    .bookmark-text {
+      font-size: 12px;
       display: inline-block;
       width: 100%;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+
+    .bookmark-icon {
+      display: block;
+      position: absolute 0 0 * *;
+      cursor: pointer;
     }
   }
 }

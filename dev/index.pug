@@ -21,20 +21,23 @@ block body
       .sidebar-main
         // bookmark start
         .bookmark-main
-          .title
+          .bookmark-header
             i.icon.remove.bookmark 
             | bookmark
             i.icon.angle.up
           ul
             li
-              a(href='#') css
-              i.icon.remove
+              a.bookmark-text(href='javascript:;') home/store/html
+              a.bookmark-icon.hint--bottom-left.hint--info.hint--rounded(aria-label='Remove bookmark' href='javascript:;')
+                i.icon.remove
             li
-              a(href='#') images
-              i.icon.remove
+              a.bookmark-text(href='javascript:;') home/store/html/patha/pathb/pathc/images
+              a.bookmark-icon.hint--bottom-left.hint--info.hint--rounded(aria-label='Remove bookmark' href='javascript:;')
+                i.icon.remove
             li
-              a(href='#') js
-              i.icon.remove
+              a.bookmark-text(href='javascript:;') home/store/js
+              a.bookmark-icon.hint--bottom-left.hint--info.hint--rounded(aria-label='Remove bookmark' href='javascript:;')
+                i.icon.remove
         ul
           li
             a(href='javascript:;')
