@@ -1,8 +1,16 @@
-# NFM-UI
+<h1 align="center">NFM-UI</h1>
 
-[![Build Status][travis-image]][travis-url]
+<p align="center">
+  <a href="https://travis-ci.org/nfmteam/nfm-ui">
+    <img src="https://img.shields.io/travis/nfmteam/nfm-ui.svg?style=flat-square" alt="Build Status">
+  </a>
+  <br>
+  <a href="https://raw.githubusercontent.com/nfmteam/nfm-ui/master/.github/screenshots.png">
+    <img src="https://raw.githubusercontent.com/nfmteam/nfm-ui/master/.github/screenshots.png">
+  </a>
+</p>
 
-nfm theme.
+The nfm's UI.
 
 ## Usage
 
@@ -20,6 +28,3 @@ npm test
 # build
 npm run build
 ```
-
-[travis-image]: https://img.shields.io/travis/nfmteam/nfm-ui.svg?style=flat-square
-[travis-url]: https://travis-ci.org/nfmteam/nfm-ui
