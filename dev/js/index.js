@@ -83,8 +83,8 @@ var app = {
       self.$history.removeClass('open').addClass('close');
     });
 
-    // favorites
-    self.$body.on('click', '.J_Favorite', function () {
+    // bookmark
+    self.$body.on('click', '.J_Bookmark', function () {
       self.$dialogAlert.addClass('active');
     });
 
