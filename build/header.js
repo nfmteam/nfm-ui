@@ -6,9 +6,7 @@ const async = require('async');
 const bufferConcat = require('buffer-concat');
 const glob = require('glob');
 
-glob('dist/**/*.css', {
-  ignore: 'dist/css/libs/**/*'
-}, function (error, files) {
+glob('docs/css/**/*.css', function (error, files) {
   if (error) {
     throw error;
   }

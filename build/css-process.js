@@ -11,8 +11,8 @@ const options = {
   rebase: false
 };
 
-glob('dist/css/**/*.css', {
-  ignore: 'dist/css/libs/**/*'
+glob('docs/css/**/*.css', {
+  ignore: 'docs/css/libs/**/*'
 }, function (error, files) {
   if (error) {
     throw error;

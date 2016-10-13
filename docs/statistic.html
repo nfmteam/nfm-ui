@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0">
+    <title>统计 - nfm</title>
+    <link rel="stylesheet" href="/libs/semantic/dist/semantic.css">
+    <link rel="stylesheet" href="/libs/c3/c3.css">
+    <link rel="stylesheet" href="/css/load.css">
+    <link rel="stylesheet" href="/css/nfm.css">
+  </head>
+  <body>
+    <div class="nfm-container-statistic">
+      <!-- header start-->
+      <div class="nfm-header">
+        <div class="ui secondary menu">
+          <div class="logo item">nfm</div>
+        </div>
+      </div>
+      <!-- header end-->
+      <div class="statistic-body">
+        <h3>文件统计</h3>
+        <div class="ui two column grid">
+          <div class="column">
+            <div class="ui blue segment">类型统计
+              <div class="chart"></div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="ui blue segment">详细信息
+              <table class="ui very basic table">
+                <tr>
+                  <td><i class="folder icon"></i>目录数</td>
+                  <td>5234</td>
+                </tr>
+                <tr>
+                  <td><i class="file icon"></i>文件数</td>
+                  <td>123412</td>
+                </tr>
+                <tr>
+                  <td><i class="file icon"></i>待发布文件</td>
+                  <td>123</td>
+                </tr>
+                <tr>
+                  <td><i class="file icon"></i>备份文件</td>
+                  <td>12332</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- message start-->
+    <div class="nfm-message ui blue message"><i class="close icon"></i>
+      <div class="header">提示：</div>
+      <p>这里是提示信息。</p>
+    </div>
+    <!-- message end-->
+    <!-- dialog alert start-->
+    <!-- 备注：添加class active显示弹窗-->
+    <div class="J_Dialog_Alert nfm-dialog ui dimmer visible">
+      <div class="ui small modal active">
+        <div class="header">Modal Title</div>
+        <div class="content">
+          <p>Are you sure you want to delete your account</p>
+        </div>
+        <div class="actions">
+          <div class="J_Dialog_Close ui red cancel button"><i class="remove icon"></i> No</div>
+          <div class="ui green ok button"><i class="checkmark icon"></i> Yes</div>
+        </div>
+      </div>
+    </div>
+    <!-- dialog alert end-->
+    <!-- new folder dialog start-->
+    <!-- 备注：-->
+    <!--    nfm-dialog添加active显示弹窗 -->
+    <!--    form添加loading显示加载中效果-->
+    <!--    form添加error显示错误信息-->
+    <div class="J_Dialog_New nfm-dialog ui dimmer visible">
+      <div class="ui small modal active">
+        <div class="header">New Folder</div>
+        <div class="content">
+          <form class="ui form">
+            <div class="field required">
+              <label>First Name</label>
+              <input type="text" name="first-name" placeholder="First Name" maxlength="10">
+            </div>
+            <div class="field required error">
+              <label>Last Name</label>
+              <input type="text" name="last-name" placeholder="Last Name" maxlength="10">
+            </div>
+            <div class="field">
+              <div class="ui toggle checkbox">
+                <input class="hidden" type="checkbox" name="public" tabindex="0">
+                <label>Subscribe to weekly newsletter</label>
+              </div>
+            </div>
+            <div class="ui error message">
+              <div class="header">Error</div>
+              <p>You can only sign up for an account once with a given e-mail address.</p>
+            </div>
+            <button class="ui button green">Submit</button>
+            <button class="ui button J_Dialog_Close">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- new folder dialog end-->
+    <!-- upload dialog start-->
+    <!-- 备注：-->
+    <!--    nfm-dialog添加active显示弹窗 -->
+    <!--    form添加loading显示加载中效果-->
+    <!--    form添加error显示错误信息-->
+    <div class="J_Dialog_Upload nfm-dialog ui dimmer visible">
+      <div class="ui small modal active">
+        <div class="header">Upload</div>
+        <div class="content">
+          <form class="ui form">
+            <div class="field required error">
+              <label>Title</label>
+              <input type="text" name="title" placeholder="Title" maxlength="10">
+            </div>
+            <div class="field">
+              <label>File/Zips</label>
+              <input type="file" name="files" multiple="multiple">
+            </div>
+            <div class="field">
+              <div class="ui toggle checkbox">
+                <input class="hidden" type="checkbox" name="public" tabindex="0">
+                <label>auto unzip</label>
+              </div>
+            </div>
+            <div class="ui error message">
+              <div class="header">Error</div>
+              <p>You can only sign up for an account once with a given e-mail address.</p>
+            </div>
+            <button class="ui button green">Submit</button>
+            <button class="ui button J_Dialog_Close">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- upload dialog end-->
+    <!-- loadingbar start-->
+    <div class="nfm-loadingbar waiting">
+      <dt></dt>
+      <dd></dd>
+    </div>
+    <!-- loadingbar end-->
+    <script src="/libs/d3/d3.js"></script>
+    <script src="/libs/c3/c3.js"></script>
+    <script src="/script/statistic.js"></script>
+  </body>
+</html>

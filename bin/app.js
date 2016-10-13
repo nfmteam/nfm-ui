@@ -36,7 +36,13 @@ const pug = new Pug({
   basedir: './dev',
   noCache: true,
   debug: true,
-  app: app
+  app: app,
+  locals: {
+    urls: {
+      js: '/',
+      css: '/'
+    }
+  }
 });
 
 // router

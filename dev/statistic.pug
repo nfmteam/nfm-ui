@@ -4,9 +4,9 @@ block title
   title 统计 - nfm
 
 block header
-  link(rel='stylesheet' href='/libs/c3/c3.css')
-  link(rel='stylesheet' href='/css/load.css')
-  link(rel='stylesheet' href='/css/nfm.css')
+  link(rel='stylesheet' href=urls.css + 'libs/c3/c3.css')
+  link(rel='stylesheet' href=urls.css + 'css/load.css')
+  link(rel='stylesheet' href=urls.css + 'css/nfm.css')
 
 block body
   .nfm-container-statistic
@@ -44,6 +44,6 @@ block body
                 td 12332
 
 block footer
-  script(src='/libs/d3/d3.js')
-  script(src='/libs/c3/c3.js')
-  script(src='/script/statistic.js')
+  script(src=urls.js + 'libs/d3/d3.js')
+  script(src=urls.js + 'libs/c3/c3.js')
+  script(src=urls.js + 'script/statistic.js')

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0">
+    <title>工作台 - nfm</title>
+    <link rel="stylesheet" href="/libs/semantic/dist/semantic.css">
+    <link rel="stylesheet" href="/libs/hint.css/hint.css">
+    <link rel="stylesheet" href="/css/load.css">
+    <link rel="stylesheet" href="/css/nfm.css">
+  </head>
+  <body>
+    <!-- 载入动画 start-->
+    <div class="nfm-load">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>
+    <!-- 载入动画 end-->
+    <div class="nfm-container-index">
+      <!-- header start-->
+      <div class="nfm-header">
+        <div class="ui secondary menu">
+          <div class="logo item">nfm</div>
+        </div>
+      </div>
+      <!-- header end-->
+      <!-- sidebar start-->
+      <div class="nfm-sidebar">
+        <div class="sidebar-main">
+          <!-- bookmark start-->
+          <div class="bookmark-main">
+            <div class="bookmark-header"><i class="icon remove bookmark"> </i>bookmark<i class="icon angle up"></i></div>
+            <ul>
+              <li><a class="bookmark-text" href="javascript:;">home/store/html</a><a class="bookmark-icon hint--bottom-left hint--info hint--rounded" aria-label="Remove bookmark" href="javascript:;"><i class="icon remove"></i></a></li>
+              <li><a class="bookmark-text" href="javascript:;">home/store/html/patha/pathb/pathc/images</a><a class="bookmark-icon hint--bottom-left hint--info hint--rounded" aria-label="Remove bookmark" href="javascript:;"><i class="icon remove"></i></a></li>
+              <li><a class="bookmark-text" href="javascript:;">home/store/js</a><a class="bookmark-icon hint--bottom-left hint--info hint--rounded" aria-label="Remove bookmark" href="javascript:;"><i class="icon remove"></i></a></li>
+            </ul>
+          </div>
+          <ul>
+            <li><a href="javascript:;"><i class="mini caret down icon"></i><i class="i-color folder open icon"></i><i class="spinner loading icon"></i> css</a>
+              <ul>
+                <li><a href="javascript:;"><i class="mini caret down icon"></i><i class="i-color folder open icon"></i><i class="spinner loading icon"></i> index</a>
+                  <ul>
+                    <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-css icon"></i> index.css</a></li>
+                    <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-postcss icon"></i> modules.pcss</a></li>
+                  </ul>
+                </li>
+                <li><a href="javascript:;"><i class="mini caret down icon"></i><i class="i-color folder open icon"></i><i class="spinner loading icon"></i> layout</a>
+                  <ul>
+                    <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-css icon"></i> layout.css</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="javascript:;"><i class="mini caret down icon"></i><i class="i-color folder open icon"></i><i class="spinner loading icon"></i> images</a>
+              <ul>
+                <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-image icon"></i> banner_01.jpg</a></li>
+                <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-image icon"></i> banner_02.jpg</a></li>
+                <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-image icon"></i> banner_03.jpg</a></li>
+                <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-image icon"></i> banner_04.jpg</a></li>
+                <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-image icon"></i> banner_05.jpg</a></li>
+                <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-image icon"></i> sprites.png</a></li>
+              </ul>
+            </li>
+            <li><a href="javascript:;"><i class="mini caret down icon"></i><i class="i-color folder open icon"></i><i class="spinner loading icon"></i> js</a>
+              <ul>
+                <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-js icon"></i> index.js</a></li>
+                <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-js icon"></i> detail.js</a></li>
+                <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-js icon"></i> layout.js</a></li>
+              </ul>
+            </li>
+            <li><a href="javascript:;"><i class="mini caret right icon"></i><i class="i-color folder icon"></i><i class="spinner loading icon"></i> Node4</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- sidebar end-->
+      <!-- workspace start-->
+      <div class="nfm-workspace">
+        <!-- operate start-->
+        <div class="workspace-operate">
+          <!-- search start-->
+          <!-- 备注：搜索时添加class loading，disabled-->
+          <div class="ui right action left icon input"><i class="icon search"></i>
+            <input type="text" placeholder="Search...">
+            <div class="J_SearchBtn ui basic floating dropdown button">
+              <div class="text">This Page</div><i class="dropdown icon"></i>
+              <div class="menu">
+                <div class="item">This Page</div>
+                <div class="item">All Files</div>
+              </div>
+            </div>
+          </div>
+          <!-- search end-->
+          <div class="ui small buttons">
+            <button class="J_NewFolder ui primary basic button hint--bottom hint--rounded" aria-label="Create a new folder"><i class="wizard icon"></i>New</button>
+            <button class="J_Upload ui primary basic button hint--bottom hint--rounded" aria-label="Upload files/zips"><i class="upload icon"></i>Upload</button>
+          </div>
+        </div>
+        <!-- operate end-->
+        <div class="workspace-breadcrumb"><i class="home icon"></i>
+          <div class="ui small breadcrumb"><a class="section">Home</a>
+            <div class="divider"> / </div><a class="section">Store</a>
+            <div class="divider"> / </div>
+            <div class="active section">T-Shirt<a class="J_Bookmark hint--bottom hint--rounded" href="javascript:;" aria-label="Add to bookmark"><i class="icon empty star yellow"></i></a></div>
+          </div>
+        </div>
+        <!-- nfm table start-->
+        <div class="workspace-table">
+          <table class="ui fixed table grey">
+            <thead>
+              <tr>
+                <th style="width:40px"></th>
+                <th>Name</th>
+                <th style="width:250px">Title</th>
+                <th style="width:100px">Size</th>
+                <th style="width:100px">Author</th>
+                <th style="width:150px"><i class="icon sort grey"></i>Date last modified</th>
+                <th style="width:100px"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><i class="i-color folder icon"></i></td>
+                <td>dist</td>
+                <td>grunt逻辑调整</td>
+                <td>-</td>
+                <td>LionHL</td>
+                <td>22 days ago</td>
+                <td><i class="icon circular cloud upload small disabled"></i><i class="icon circular protect small disabled"></i></td>
+              </tr>
+              <tr>
+                <td><i class="i-color folder icon"></i></td>
+                <td>src</td>
+                <td>使用bower安装jquery</td>
+                <td>-</td>
+                <td>LionHL</td>
+                <td>22 days ago</td>
+                <td><i class="icon circular cloud upload small green"></i><i class="icon circular protect small green"></i></td>
+              </tr>
+              <tr>
+                <td><i class="i-color folder icon"></i></td>
+                <td>test</td>
+                <td>更新1.2.0</td>
+                <td>-</td>
+                <td>LionHL</td>
+                <td>2 years ago</td>
+                <td><i class="icon circular cloud upload small disabled"></i><i class="icon circular protect small disabled"></i></td>
+              </tr>
+              <tr>
+                <td><i class="icon nfm-icon i-bower"></i></td>
+                <td>.bowerrc</td>
+                <td>使用bower安装jquery</td>
+                <td>34B</td>
+                <td>Keenwon</td>
+                <td>54 minutes age</td>
+                <td><i class="icon circular cloud upload small green"></i><i class="icon circular protect small disabled"></i></td>
+              </tr>
+              <tr>
+                <td><i class="icon nfm-icon i-git"></i></td>
+                <td>.gitignore</td>
+                <td>使用bower安装jquery</td>
+                <td>69B</td>
+                <td>Keenwon</td>
+                <td>21 days ago</td>
+                <td><i class="icon circular cloud upload small disabled"></i><i class="icon circular protect small green"></i></td>
+              </tr>
+              <tr>
+                <td><i class="icon nfm-icon i-jshintrc"></i></td>
+                <td>.jshintrc</td>
+                <td>提交代码</td>
+                <td>688B</td>
+                <td>LionHL</td>
+                <td>3 years ago</td>
+                <td><i class="icon circular cloud upload small green"></i><i class="icon circular protect small disabled"></i></td>
+              </tr>
+              <tr>
+                <td><i class="icon nfm-icon i-travis"></i></td>
+                <td>.travis.yml</td>
+                <td>travis执行测试前先使用bower安装</td>
+                <td>149B</td>
+                <td>Keenwon</td>
+                <td>10 months ago</td>
+                <td><i class="icon circular cloud upload small disabled"></i><i class="icon circular protect small disabled"></i></td>
+              </tr>
+              <tr>
+                <td><i class="icon nfm-icon i-js"></i></td>
+                <td>jq<b>Pag</b>inator.js</td>
+                <td>更新1.2.0</td>
+                <td>9.1K</td>
+                <td>Keenwon</td>
+                <td>10 months ago</td>
+                <td><i class="icon circular cloud upload small disabled"></i><i class="icon circular protect small disabled"></i></td>
+              </tr>
+              <tr>
+                <td><i class="icon nfm-icon i-html"></i></td>
+                <td>index.html</td>
+                <td>提交代码</td>
+                <td>1.1K</td>
+                <td>HeXiaoPang</td>
+                <td>1 months ago</td>
+                <td><i class="icon circular cloud upload small disabled"></i><i class="icon circular protect small disabled"></i></td>
+              </tr>
+              <tr>
+                <td><i class="icon nfm-icon i-css"></i></td>
+                <td>jqPaginator.css</td>
+                <td>更新1.2.0</td>
+                <td>90.1K</td>
+                <td>HeXiaoPang</td>
+                <td>19 months ago</td>
+                <td><i class="icon circular cloud upload small disabled"></i><i class="icon circular protect small disabled"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- nfm-table end-->
+      </div>
+      <!-- workspace end-->
+      <!-- history start-->
+      <div class="nfm-history">
+        <h4 class="history-title clearfix"><span class="left">文件历史</span><a class="right" href="javascript:;"><i class="remove icon history-close"></i></a></h4>
+        <h4 class="ui horizontal divider"><i class="history icon"></i></h4>
+        <div class="history-list">
+          <div class="ui feed clearfix">
+            <div class="event">
+              <div class="label"><img src="http://semantic-ui.com/images/avatar/small/elliot.jpg"></div>
+              <div class="content">
+                <div class="summary">
+                  <div class="date">4 hours ago</div><a class="J_HistoryReset hint--bottom-left hint--rounded" aria-label="Reset to this version" href="javascript:;"><i class="icon repeat"></i></a><a class="J_HistoryCompare hint--bottom-left hint--rounded" aria-label="Compare with current version" href="javascript:;"><i class="icon file code outline"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ui feed clearfix">
+            <div class="event">
+              <div class="label"><img src="http://semantic-ui.com/images/avatar/small/jenny.jpg"></div>
+              <div class="content">
+                <div class="summary">
+                  <div class="date">2 days ago</div><a class="J_HistoryReset hint--bottom-left hint--rounded" aria-label="Reset to this version" href="javascript:;"><i class="icon repeat"></i></a><a class="J_HistoryCompare hint--bottom-left hint--rounded" aria-label="Compare with current version" href="javascript:;"><i class="icon file code outline"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ui feed clearfix">
+            <div class="event">
+              <div class="label"><img src="http://semantic-ui.com/images/avatar/small/laura.jpg"></div>
+              <div class="content">
+                <div class="summary">
+                  <div class="date">2 years age</div><a class="J_HistoryReset hint--bottom-left hint--rounded" aria-label="Reset to this version" href="javascript:;"><i class="icon repeat"></i></a><a class="J_HistoryCompare hint--bottom-left hint--rounded" aria-label="Compare with current version" href="javascript:;"><i class="icon file code outline"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- history end-->
+      <!-- menu start-->
+      <div class="J_Menu nfm-menu ui vertical menu mini"><a class="item" href="javascript:;"><i class="icon move"></i>Move</a><a class="item" href="javascript:;"><i class="icon cloud upload"></i>Publish </a><a class="item J_History" href="javascript:;"><i class="icon history"></i>History</a><a class="item" href="javascript:;"><i class="icon trash red"></i>Delete</a></div>
+      <!-- menu end-->
+    </div>
+    <!-- message start-->
+    <div class="nfm-message ui blue message"><i class="close icon"></i>
+      <div class="header">提示：</div>
+      <p>这里是提示信息。</p>
+    </div>
+    <!-- message end-->
+    <!-- dialog alert start-->
+    <!-- 备注：添加class active显示弹窗-->
+    <div class="J_Dialog_Alert nfm-dialog ui dimmer visible">
+      <div class="ui small modal active">
+        <div class="header">Modal Title</div>
+        <div class="content">
+          <p>Are you sure you want to delete your account</p>
+        </div>
+        <div class="actions">
+          <div class="J_Dialog_Close ui red cancel button"><i class="remove icon"></i> No</div>
+          <div class="ui green ok button"><i class="checkmark icon"></i> Yes</div>
+        </div>
+      </div>
+    </div>
+    <!-- dialog alert end-->
+    <!-- new folder dialog start-->
+    <!-- 备注：-->
+    <!--    nfm-dialog添加active显示弹窗 -->
+    <!--    form添加loading显示加载中效果-->
+    <!--    form添加error显示错误信息-->
+    <div class="J_Dialog_New nfm-dialog ui dimmer visible">
+      <div class="ui small modal active">
+        <div class="header">New Folder</div>
+        <div class="content">
+          <form class="ui form">
+            <div class="field required">
+              <label>First Name</label>
+              <input type="text" name="first-name" placeholder="First Name" maxlength="10">
+            </div>
+            <div class="field required error">
+              <label>Last Name</label>
+              <input type="text" name="last-name" placeholder="Last Name" maxlength="10">
+            </div>
+            <div class="field">
+              <div class="ui toggle checkbox">
+                <input class="hidden" type="checkbox" name="public" tabindex="0">
+                <label>Subscribe to weekly newsletter</label>
+              </div>
+            </div>
+            <div class="ui error message">
+              <div class="header">Error</div>
+              <p>You can only sign up for an account once with a given e-mail address.</p>
+            </div>
+            <button class="ui button green">Submit</button>
+            <button class="ui button J_Dialog_Close">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- new folder dialog end-->
+    <!-- upload dialog start-->
+    <!-- 备注：-->
+    <!--    nfm-dialog添加active显示弹窗 -->
+    <!--    form添加loading显示加载中效果-->
+    <!--    form添加error显示错误信息-->
+    <div class="J_Dialog_Upload nfm-dialog ui dimmer visible">
+      <div class="ui small modal active">
+        <div class="header">Upload</div>
+        <div class="content">
+          <form class="ui form">
+            <div class="field required error">
+              <label>Title</label>
+              <input type="text" name="title" placeholder="Title" maxlength="10">
+            </div>
+            <div class="field">
+              <label>File/Zips</label>
+              <input type="file" name="files" multiple="multiple">
+            </div>
+            <div class="field">
+              <div class="ui toggle checkbox">
+                <input class="hidden" type="checkbox" name="public" tabindex="0">
+                <label>auto unzip</label>
+              </div>
+            </div>
+            <div class="ui error message">
+              <div class="header">Error</div>
+              <p>You can only sign up for an account once with a given e-mail address.</p>
+            </div>
+            <button class="ui button green">Submit</button>
+            <button class="ui button J_Dialog_Close">Cancel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- upload dialog end-->
+    <!-- loadingbar start-->
+    <div class="nfm-loadingbar waiting">
+      <dt></dt>
+      <dd></dd>
+    </div>
+    <!-- loadingbar end-->
+    <script src="/script/index.js"></script>
+  </body>
+</html>

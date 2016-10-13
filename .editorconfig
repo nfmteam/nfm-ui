@@ -1,5 +1,5 @@
 root = true
 
-[*.{js,pcss,html,pug}]
+[*.{js,pcss,html,pug,json}]
 indent_style = space
 indent_size = 2
