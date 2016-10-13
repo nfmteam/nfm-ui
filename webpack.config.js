@@ -11,7 +11,7 @@ module.exports = [
     entry: {
       'index': getPath('dev/js/index'),
       'statistic': getPath('dev/js/statistic'),
-      'initialize': getPath('dev/js/initialize')
+      'system': getPath('dev/js/system')
     },
     output: {
       path: getPath('dist/js/'),

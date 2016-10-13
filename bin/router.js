@@ -21,10 +21,10 @@ router.get('/statistic', function* () {
 });
 
 /**
- * Initialize
+ * System
  */
-router.get('/initialize', function* () {
-  this.render('initialize');
+router.get('/system', function* () {
+  this.render('system');
 });
 
 module.exports = router;
