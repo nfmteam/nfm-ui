@@ -3,5 +3,4 @@
 .vscode/
 node_modules/
 dev/libs/
-dist/
 **/*.swp  
