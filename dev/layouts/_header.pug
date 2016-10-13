@@ -1,7 +1,9 @@
 .nfm-header
   .ui.secondary.menu
-    .logo.item NFM
-    .right.menu
-      a.item(href='javascript:;')
-        img.ui.image(src='http://semantic-ui.com/images/avatar/small/helen.jpg') 
-        i.dropdown.icon
+    .logo.item nfm
+
+    if userInfo
+      .right.menu
+        a.item(href='javascript:;')
+          img.ui.image(src='http://semantic-ui.com/images/avatar/small/helen.jpg') 
+          i.dropdown.icon
