@@ -6,7 +6,7 @@
   </a>
   <br>
   <a href="https://raw.githubusercontent.com/nfmteam/nfm-ui/master/.github/screenshots.png">
-    <img src="https://raw.githubusercontent.com/nfmteam/nfm-ui/master/.github/screenshots.png" style="box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)">
+    <img src="https://raw.githubusercontent.com/nfmteam/nfm-ui/master/.github/screenshots.png">
   </a>
 </p>
 
