@@ -10,7 +10,7 @@
   </a>
 </p>
 
-The nfm's UI.
+:art: The nfm's UI. base on [Semantic-UI](https://github.com/Semantic-Org/Semantic-UI).
 
 ## Usage
 
