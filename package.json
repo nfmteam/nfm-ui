@@ -23,7 +23,7 @@
     "js": "webpack --optimize-dedupe --optimize-occurrence-order --progress --colors --display-error-details --config webpack.config.js",
     "header": "node build/header",
     "pug": "pug -O pug.config.json -o docs -P dev/*.pug",
-    "__build__": "npm run clean && npm run copy && npm run css && npm run header && npm run pug",
+    "__build__": "npm run clean && npm run copy && npm run css && npm run header && npm run pug && npm run js",
     "build": "npm run test && NODE_ENV=docs npm run __build__"
   },
   "repository": {
