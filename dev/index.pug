@@ -27,19 +27,20 @@ block body
             i.icon.remove.bookmark 
             | bookmark
             i.icon.angle.up
-          ul
-            li
-              a.bookmark-text(href='javascript:;') home/store/html
-              a.bookmark-icon.hint--bottom-left.hint--white.hint--rounded(aria-label='Remove bookmark' href='javascript:;')
-                i.icon.remove
-            li
-              a.bookmark-text(href='javascript:;') home/store/html/patha/pathb/pathc/images
-              a.bookmark-icon.hint--bottom-left.hint--white.hint--rounded(aria-label='Remove bookmark' href='javascript:;')
-                i.icon.remove
-            li
-              a.bookmark-text(href='javascript:;') home/store/js
-              a.bookmark-icon.hint--bottom-left.hint--white.hint--rounded(aria-label='Remove bookmark' href='javascript:;')
-                i.icon.remove
+          .bookmark-main
+            ul
+              li
+                a.bookmark-text(href='javascript:;') home/store/html
+                a.bookmark-icon.hint--bottom-left.hint--white.hint--rounded(aria-label='Remove bookmark' href='javascript:;')
+                  i.icon.remove
+              li
+                a.bookmark-text(href='javascript:;') home/store/html/patha/pathb/pathc/images
+                a.bookmark-icon.hint--bottom-left.hint--white.hint--rounded(aria-label='Remove bookmark' href='javascript:;')
+                  i.icon.remove
+              li
+                a.bookmark-text(href='javascript:;') home/store/js
+                a.bookmark-icon.hint--bottom-left.hint--white.hint--rounded(aria-label='Remove bookmark' href='javascript:;')
+                  i.icon.remove
         ul
           li
             a(href='javascript:;')
