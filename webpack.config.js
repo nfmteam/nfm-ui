@@ -19,7 +19,7 @@ var config = {
   }
 };
 
-if (process.env.NODE_ENV === 'docs') {
+if (process.env.NODE_ENV !== 'docs') {
   config.devtool = 'eval-cheap-module-source-map';
 } else {
   let uglifyJsPlugin = new webpack.optimize.UglifyJsPlugin({
