@@ -11,7 +11,7 @@
     "clean": "del -f docs",
     "copy": "npm run copy:postcss && npm run copy:public && npm run copy:images && npm run copy:libs && npm run copy:temp",
     "copy:postcss": "copyfiles -u 1 'dev/css/**/*.pcss' docs",
-    "copy:libs": "copyfiles -u 1 'dev/libs/semantic/dist/semantic.css' 'dev/libs/semantic/dist/themes/**' 'dev/libs/c3/**' 'dev/libs/d3/**' 'dev/libs/hint.css/hint.css' docs",
+    "copy:libs": "copyfiles -u 1 'dev/libs/semantic/dist/semantic.css' 'dev/libs/semantic/dist/themes/**' 'dev/libs/c3/**' 'dev/libs/d3/**' docs",
     "copy:public": "copyfiles 'public/**/*' docs",
     "copy:images": "copyfiles -u 1 'dev/images/**/*' docs",
     "copy:temp": "copyfiles -u 1 'dev/temp/**/*' docs",
