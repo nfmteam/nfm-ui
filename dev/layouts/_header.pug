@@ -1,9 +1,19 @@
 .nfm-header
-  .ui.secondary.menu
+  .ui.secondary.menu.nfm-nav
     .logo.item nfm
 
     if userInfo
-      .right.menu
+      .right.menu.nfm-nav
         a.item(href='javascript:;')
           img.ui.image(src='temp/avatar/helen.jpg') 
           i.dropdown.icon
+  .J_Headermenu.nfm-headermenu.ui.vertical.menu.small
+    span.item 
+      | Signed in as 
+      b LionHL
+    a.item 
+      i.icon.setting
+      | Settings
+    a.item 
+      i.icon.sign.out
+      | Sign Out

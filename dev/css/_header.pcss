@@ -11,7 +11,7 @@
   z-index: $headerLayer;
 }
 
-.nfm-header .menu {
+.nfm-header .nfm-nav {
   margin: 0;
   border: 0;
   border-radius: 0;
@@ -44,5 +44,18 @@
       height: 30px;
       margin-left: 0 !important;
     }
+  }
+}
+
+.nfm-header .nfm-headermenu {
+  position: absolute;
+  z-index: $headerMenuLayer;
+  display: none !important;
+  margin: 0 !important;
+  top: 55px;
+  right: 24px;
+
+  span.item {
+    color: $headerMenuSpanColor;
   }
 }

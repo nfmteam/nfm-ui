@@ -4,7 +4,6 @@
 
 /* 平面层 */
 $_baseLayer: 1;
-$headerLayer: calc($_baseLayer);
 
 $workspaceLayer: calc($_baseLayer + 1);
 $workspaceTableLayer: calc($_baseLayer + 2);
@@ -12,6 +11,10 @@ $workspaceMenuLayer: calc($_baseLayer + 3);
 
 $sidebarLayer: calc($_baseLayer + 10);
 $historyLayer: calc($_baseLayer + 10);
+
+/* header层 */
+$headerLayer: calc($_baseLayer + 20);
+$headerMenuLayer: calc($_baseLayer + 21);
 
 /* dialog层 */
 $_dialogLayer: 100;
