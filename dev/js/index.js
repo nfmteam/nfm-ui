@@ -24,7 +24,7 @@ var app = {
     self.$dialogAlert = $('.J_Dialog_Alert');
     self.$dialogNew = $('.J_Dialog_New');
     self.$dialogUpload = $('.J_Dialog_Upload');
-    self.$menu = $('.J_Menu');
+    self.$contextmenu = $('.J_Contextmenu');
   },
 
   bindEvents: function () {
@@ -120,7 +120,7 @@ var app = {
       var y = e.clientY;
 
       if (isInWorkspaceTable) {
-        self.$menu.css({
+        self.$contextmenu.css({
           display: 'block',
           left: x,
           top: y
@@ -128,7 +128,7 @@ var app = {
 
         e.preventDefault();
       } else {
-        self.$menu.css({
+        self.$contextmenu.css({
           display: 'none'
         });
       }
@@ -136,7 +136,7 @@ var app = {
 
     // hide menu
     self.$body.on('click', function () {
-      self.$menu.css({
+      self.$contextmenu.css({
         display: 'none'
       });
     });
