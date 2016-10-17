@@ -21,10 +21,12 @@
     <div class="nfm-container-index">
       <!-- header start-->
       <div class="nfm-header">
-        <div class="ui secondary menu">
+        <div class="ui secondary menu nfm-nav">
           <div class="logo item">nfm</div>
-          <div class="right menu"><a class="item" href="javascript:;"><img class="ui image" src="temp/avatar/helen.jpg"><i class="dropdown icon"></i></a></div>
+          <div class="right menu nfm-nav"><a class="item" href="javascript:;"><img class="ui image" src="temp/avatar/helen.jpg"><i class="dropdown icon"></i></a></div>
         </div>
+        <div class="J_Headermenu nfm-headermenu ui vertical menu small"><span class="item">
+             Signed in as <b>LionHL</b></span><a class="item"> <i class="icon setting"></i>Settings</a><a class="item"> <i class="icon sign out"></i>Sign Out</a></div>
       </div>
       <!-- header end-->
       <!-- sidebar start-->
@@ -35,47 +37,50 @@
             <div class="bookmark-header"><i class="icon remove bookmark"> </i>bookmark<i class="icon angle up"></i></div>
             <div class="bookmark-main">
               <ul>
-                <li><a class="bookmark-text" href="javascript:;">home/store/html</a><a class="bookmark-icon hint--bottom-left hint--white hint--rounded" aria-label="Remove bookmark" href="javascript:;"><i class="icon remove"></i></a></li>
-                <li><a class="bookmark-text" href="javascript:;">home/store/html/patha/pathb/pathc/images</a><a class="bookmark-icon hint--bottom-left hint--white hint--rounded" aria-label="Remove bookmark" href="javascript:;"><i class="icon remove"></i></a></li>
-                <li><a class="bookmark-text" href="javascript:;">home/store/js</a><a class="bookmark-icon hint--bottom-left hint--white hint--rounded" aria-label="Remove bookmark" href="javascript:;"><i class="icon remove"></i></a></li>
+                <li><a class="bookmark-text" href="javascript:;"><i class="icon star yellow"></i>home/store/html</a><a class="bookmark-icon hint--bottom-left hint--white hint--rounded" aria-label="Remove bookmark" href="javascript:;"><i class="icon remove"></i></a></li>
+                <li><a class="bookmark-text" href="javascript:;"><i class="icon star yellow"></i>home/store/html/patha/pathb/pathc/images</a><a class="bookmark-icon hint--bottom-left hint--white hint--rounded" aria-label="Remove bookmark" href="javascript:;"><i class="icon remove"></i></a></li>
+                <li><a class="bookmark-text" href="javascript:;"><i class="icon star yellow"></i>home/store/js</a><a class="bookmark-icon hint--bottom-left hint--white hint--rounded" aria-label="Remove bookmark" href="javascript:;"><i class="icon remove"></i></a></li>
               </ul>
             </div>
           </div>
-          <ul>
-            <li><a href="javascript:;"><i class="mini caret down icon"></i><i class="i-color folder open icon"></i><i class="spinner loading icon"></i> css</a>
-              <ul>
-                <li><a href="javascript:;"><i class="mini caret down icon"></i><i class="i-color folder open icon"></i><i class="spinner loading icon"></i> index</a>
-                  <ul>
-                    <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-css icon"></i> index.css</a></li>
-                    <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-postcss icon"></i> modules.pcss</a></li>
-                  </ul>
-                </li>
-                <li><a href="javascript:;"><i class="mini caret down icon"></i><i class="i-color folder open icon"></i><i class="spinner loading icon"></i> layout</a>
-                  <ul>
-                    <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-css icon"></i> layout.css</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="javascript:;"><i class="mini caret down icon"></i><i class="i-color folder open icon"></i><i class="spinner loading icon"></i> images</a>
-              <ul>
-                <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-image icon"></i> banner_01.jpg</a></li>
-                <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-image icon"></i> banner_02.jpg</a></li>
-                <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-image icon"></i> banner_03.jpg</a></li>
-                <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-image icon"></i> banner_04.jpg</a></li>
-                <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-image icon"></i> banner_05.jpg</a></li>
-                <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-image icon"></i> sprites.png</a></li>
-              </ul>
-            </li>
-            <li><a href="javascript:;"><i class="mini caret down icon"></i><i class="i-color folder open icon"></i><i class="spinner loading icon"></i> js</a>
-              <ul>
-                <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-js icon"></i> index.js</a></li>
-                <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-js icon"></i> detail.js</a></li>
-                <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-js icon"></i> layout.js</a></li>
-              </ul>
-            </li>
-            <li><a href="javascript:;"><i class="mini caret right icon"></i><i class="i-color folder icon"></i><i class="spinner loading icon"></i> Node4</a></li>
-          </ul>
+          <!-- sidebar menu start-->
+          <div class="sidebar-menu">
+            <ul>
+              <li><a href="javascript:;"><i class="mini caret down icon"></i><i class="i-color folder open icon"></i><i class="spinner loading icon"></i> css</a>
+                <ul>
+                  <li><a href="javascript:;"><i class="mini caret down icon"></i><i class="i-color folder open icon"></i><i class="spinner loading icon"></i> index</a>
+                    <ul>
+                      <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-css icon"></i> index.css</a></li>
+                      <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-postcss icon"></i> modules.pcss</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="javascript:;"><i class="mini caret down icon"></i><i class="i-color folder open icon"></i><i class="spinner loading icon"></i> layout</a>
+                    <ul>
+                      <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-css icon"></i> layout.css</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="javascript:;"><i class="mini caret down icon"></i><i class="i-color folder open icon"></i><i class="spinner loading icon"></i> images</a>
+                <ul>
+                  <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-image icon"></i> banner_01.jpg</a></li>
+                  <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-image icon"></i> banner_02.jpg</a></li>
+                  <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-image icon"></i> banner_03.jpg</a></li>
+                  <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-image icon"></i> banner_04.jpg</a></li>
+                  <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-image icon"></i> banner_05.jpg</a></li>
+                  <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-image icon"></i> sprites.png</a></li>
+                </ul>
+              </li>
+              <li><a href="javascript:;"><i class="mini caret down icon"></i><i class="i-color folder open icon"></i><i class="spinner loading icon"></i> js</a>
+                <ul>
+                  <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-js icon"></i> index.js</a></li>
+                  <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-js icon"></i> detail.js</a></li>
+                  <li><a href="javascript:;"><i class="mini icon"></i><i class="nfm-icon i-js icon"></i> layout.js</a></li>
+                </ul>
+              </li>
+              <li><a href="javascript:;"><i class="mini caret right icon"></i><i class="i-color folder icon"></i><i class="spinner loading icon"></i> Node4</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <!-- sidebar end-->
@@ -259,7 +264,7 @@
       </div>
       <!-- history end-->
       <!-- menu start-->
-      <div class="J_Menu nfm-menu ui vertical menu mini"><a class="item" href="javascript:;"><i class="icon move"></i>Move</a><a class="item" href="javascript:;"><i class="icon cloud upload"></i>Publish </a><a class="item J_History" href="javascript:;"><i class="icon history"></i>History</a><a class="item" href="javascript:;"><i class="icon trash red"></i>Delete</a></div>
+      <div class="J_Contextmenu nfm-contextmenu ui vertical menu mini"><a class="item" href="javascript:;"><i class="icon move"></i>Move</a><a class="item" href="javascript:;"><i class="icon cloud upload"></i>Publish </a><a class="item J_History" href="javascript:;"><i class="icon history"></i>History</a><a class="item" href="javascript:;"><i class="icon trash red"></i>Delete</a></div>
       <!-- menu end-->
     </div>
     <!-- message start-->

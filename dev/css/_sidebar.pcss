@@ -13,7 +13,12 @@
 
 .sidebar-main {
   height: 100%;
-  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+
+  .sidebar-menu {
+    overflow-y: scroll;
+  }
 
   ul {
     padding-left: 15px;
@@ -55,26 +60,33 @@
 /* bookmark */
 .nfm-bookmark {
   padding: 0 15px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: $bookmarkColor;
   border-bottom: $bookmarkBorderBottom;
 
   .bookmark-header {
-    @mixin clearfix;
+    position: relative;
 
     i.icon.bookmark {
       color: $iconBookmarkColor;
     }
 
     i.icon.angle {
-      float: right;
+      position: absolute 0 0 * *;
       margin-right: 0;
       cursor: pointer;
     }
   }
 
+  .bookmark-main {
+    padding: 5px 0;
+    margin: 5px 0 10px;
+    max-height: 105px;
+    overflow-y: scroll;
+  }
+
   ul {
-    padding: 10px 0 10px 2px;
+    padding: 0 0 0 2px;
   }
 
   li {
@@ -88,6 +100,10 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+
+    .bookmark-text i {
+      margin-right: 5px !important;
     }
 
     .bookmark-icon {
