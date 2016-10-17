@@ -27,4 +27,11 @@ router.get('/system', function* () {
   this.render('system');
 });
 
+/**
+ * Login
+ */
+router.get('/login', function* () {
+  this.render('login');
+});
+
 module.exports = router;

@@ -11,7 +11,8 @@ var config = {
   entry: {
     'index': getPath('dev/js/index'),
     'statistic': getPath('dev/js/statistic'),
-    'system': getPath('dev/js/system')
+    'system': getPath('dev/js/system'),
+    'login': getPath('dev/js/login')
   },
   output: {
     path: getPath('docs/script/'),
