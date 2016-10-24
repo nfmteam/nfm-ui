@@ -17,7 +17,7 @@
     "copy:temp": "copyfiles -u 1 'dev/temp/**/*' docs",
     "css": "npm run css:build && npm run css:clean && npm run css:rename && npm run css:process",
     "css:build": "postcss -r -c postcss.json",
-    "css:clean": "del -f 'docs/css/**/_*.pcss' 'docs/css/mixins'",
+    "css:clean": "del -f 'docs/css/**/_*.pcss' 'docs/css/mixins' 'docs/css/themes'",
     "css:rename": "renamer --find 'pcss' --replace 'css' docs/css/**/*.pcss",
     "css:process": "node build/css-process",
     "js": "webpack --optimize-dedupe --optimize-occurrence-order --progress --colors --display-error-details --config webpack.config.js",
